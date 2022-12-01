@@ -128,6 +128,7 @@ function addClassPopup() {
     if(popupBtns.length) {
         popupBtns.forEach(btn => {
             btn.addEventListener('click', function(e) {
+                e.preventDefault()
                 if (e.target.classList[0] === 'bsket-mob') {
                     if (!matchMedia('(max-width: 767.98px)').matches) {
                         e.preventDefault()
