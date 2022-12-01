@@ -1,0 +1,29 @@
+.confirmation__container {
+  margin-bottom: 20px;
+}
+
+.confirmation__container p {
+  margin: 0;
+  margin-bottom: 3px;
+  line-height: 1.5;
+}
+
+.confirmation__title {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.confirmation__subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.confirmation__icon {
+  font-size: 18pt;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #99cc00;
+}
+/*# sourceMappingURL=confirmation-step4.css.map */

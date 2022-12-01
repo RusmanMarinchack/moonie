@@ -1,0 +1,148 @@
+.header-basket-step {
+    padding: 3em 0;
+
+    @media screen and (max-width: 767.98px) {
+        padding: 1em 0;
+    }
+
+    &.fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background: #fff;
+        z-index: 20;
+
+        & .header-basket-step__logo a {
+            width: 130px;
+            height: 50px;
+        }
+    }
+
+    // .header-basket-step__container
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (max-width: 991.98px) {
+            flex-direction: column;
+            align-items: start;
+        }
+
+        @media screen and (max-width: 499.98px) {
+            align-items: center;
+        }
+    }
+
+    // .header-basket-step__logo
+
+    &__logo {
+        & a {
+            display: inline-block;
+            width: 180px;
+            height: 80px;
+
+            @media screen and (max-width: 991.98px) {
+                width: 130px;
+                height: 60px;
+                display: block;
+            }
+
+            @media screen and (max-width: 499.98px) {
+                width: 90px;
+            }
+
+            & img {
+                width: 100%;
+            }
+        }
+    }
+
+    // .header-basket-step__progres
+
+    .progres {
+        width: 60%;
+
+        @media screen and (max-width: 991.98px) {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 499.98px) {
+            display: none;
+        }
+
+        // .progres__list
+    
+        &__list {
+            display: flex;
+            align-items: center;
+           
+        }
+    
+        // .progres__item
+    
+        &__item {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 25%;
+            position: relative;
+            text-align: center;
+            color: #EDEDED;
+            pointer-events: none;
+
+            &.passed {
+                pointer-events: auto;
+                & .progres__namber {
+                    background: #000;
+                    
+                }
+
+                & a {
+                    color: #000;
+                }
+            }
+
+            &:not(:last-child)::after {
+                content: '';
+                width: 100%;
+                height: 1px;
+                background-color: #EDEDED;
+                display: block;
+                position: absolute;
+                top: 28%;
+                left: 50%;
+                z-index: -1;
+            }
+
+            & a {
+                margin-top: 10px;
+                text-decoration: none;
+                color: #EDEDED;
+
+            }
+        }
+    
+        // .progres__namber
+    
+        &__namber {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            text-align: center;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            padding: 0;
+            font-size: 14px;
+            background-color: #EDEDED;
+            color: #fff;
+
+        }
+    }
+}
+

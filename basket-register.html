@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rgister</title>
+    <link rel="stylesheet" href="./css/fonts-icon.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body class="basket-register">
+    
+    <header class="header-basket-step headers">
+        <div class="header-basket-step__container _container">
+            <div class="header-basket-step__logo">
+                <a href="./index.html">
+                    <img src="./imgs/svg/logo.svg" alt="Logo">
+                </a>
+            </div>
+
+            <div class="header-basket-step__progres progres">
+                <ul class="progres__list">
+                    <li class="progres__item passed">
+                        <div class="progres__namber">
+                            1
+                        </div>
+                        <a href="#">
+                            Koszyk
+                        </a>
+                    </li>
+                    <li class="progres__item passed">
+                        <div class="progres__namber">
+                            2
+                        </div>
+                        <a href="#">Twoje dane</a>
+                    </li>
+                    <li class="progres__item">
+                        <div class="progres__namber">
+                            3
+                        </div>
+                        <a href="#">Podsumowanie</a>
+                    </li>
+                    <li class="progres__item">
+                        <div class="progres__namber">
+                            4
+                        </div>
+                        <a href="#">Potwierdzenie</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="main__basket-register basket-register">
+            <div class="basket-register__container _container">
+                <div class="basket-register__wrapper">
+                    <form action="#" class="basket-register__form basket-register-form">
+                        <div class="basket-register-form__container">
+                            <div class="basket-register-form__wrapper basket-register-form-wrapper">
+                                <h4>Twoje dane</h4>
+                                <div class="basket-register-form-wrapper__inner">
+                                    <div class="basket-register-form-wrapper__item">
+                                        <label for="input_mail">E-mail:</label>
+                                        <input class="input" type="email" id="input_mail">
+                                        <span class="message">Pole wymagane</span>
+                                    </div>
+                                    <div class="basket-register-form-wrapper__item">
+                                        <label for="input_name">Imię:</label>
+                                        <input class="input" type="text" id="input_name">
+                                        <span class="message">Pole wymagane</span>
+                                    </div>
+                                    <div class="basket-register-form-wrapper__item">
+                                        <label for="input_surname">Nazwisko</label>
+                                        <input class="input" type="text" id="input_surname">
+                                        <span class="message">Pole wymagane</span>
+                                    </div>
+                                    <div class="basket-register-form-wrapper__item">
+                                        <label for="input_phone">Telefon:</label>
+                                        <input class="input" type="number" id="input_phone">
+                                        <span class="message">Pole wymagane</span>
+                                    </div>
+                                    <div class="basket-register-form-wrapper__item password">
+                                        <label for="input_pass1">Hasło:</label>
+                                        <input class="input" type="text" id="input_pass1">
+                                        <span class="message">Pole wymagane</span>
+                                    </div>
+                                    <div class="basket-register-form-wrapper__item password">
+                                        <label for="input_pass2">Powtórz hasło:</label>
+                                        <input class="input" type="text" id="input_pass2">
+                                        <span class="message">Pole wymagane</span>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="basket-register-form__wrapper basket-register-form-wrapper address-data">
+                                <h4>Dane adresowe</h4>
+                                <div class="basket-register-form-wrapper__inner">
+                                    <div class="basket-register-form-wrapper__item input-radio">
+                                        <div class="input-radio__inner">
+                                            <input class="input-checked" data-checked-id="active-form-1" type="radio" id="address_type1" name="1" checked>
+                                            <label for="address_type1">osoba prywatna</label>
+                                            
+                                        </div>
+                                        <div class="input-radio__inner">
+                                            <input class="input-checked" data-checked-id="active-form-2" type="radio" id="address_type2" name="1">
+                                            <label for="address_type2">firma</label>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="basket-register-form-wrapper__inner active-form active" id="active-form-1">
+                                    <div class="basket-register-form-wrapper__item">
+                                        <label for="input_coname">Nazwa firmy:</label>
+                                        <input class="input" type="text" name="coname" id="input_coname">
+                                        <span class="message">Pole wymagane</span>
+                                    </div>
+                                    <div class="basket-register-form-wrapper__item">
+                                        <label for="input_nip">NIP:</label>
+                                        <input class="input" type="text" id="input_nip" name="nip">
+                                        <span class="message">Pole wymagane</span>
+                                    </div>
+                                    <div class="basket-register-form-wrapper__item">
+                                        <label for="input_other_address">Ulica i nr domu:</label>
+                                        <input class="input" type="text" id="input_other_address" name="other_address">
+                                        <span class="message">
+                                            <span>Pole wymagane</span>
+                                            <span>Uzupełnij numer budynku</span>
+                                        </span>
+                                    </div>
+                                    <div class="basket-register-form-wrapper__item">
+                                        <label for="input_zip">Kod pocztowy:</label>
+                                        <input class="input" type="text" id="input_zip" name="zip">
+                                        <span class="message">
+                                            Pole wymagane
+                                        </span>
+                                    </div>
+                                    <div class="basket-register-form-wrapper__item">
+                                        <label for="input_city">Miasto:</label>
+                                        <input class="input" type="text" id="input_city" name="zip">
+                                        <span class="message">
+                                            Pole wymagane
+                                        </span>
+                                    </div>
+                                </div>
+    
+                                <div class="basket-register-form-wrapper__inner active-form" id="active-form-2">
+                                    <div class="basket-register-form-wrapper__item">
+                                        <div class="basket-register-form-wrapper__item">
+                                            <label for="other_address">Ulica i nr domu:</label>
+                                            <input class="input" type="text" name="other_address" id="other_address">
+                                            <span class="message">
+                                                <span>Pole wymagane</span>
+                                                <span>Uzupełnij numer budynku</span>
+                                            </span>
+                                        </div>
+                                        <div class="basket-register-form-wrapper__item">
+                                            <label for="input_zip">Kod pocztowy:</label>
+                                            <input class="input" type="text" name="other_address" id="input_zip">
+                                            <span class="message">
+                                                Pole wymagane
+                                            </span>
+                                        </div>
+                                        <div class="basket-register-form-wrapper__item">
+                                            <label for="input_city">Miasto:</label>
+                                            <input class="input" type="text" name="city" id="input_city">
+                                            <span class="message">
+                                                Pole wymagane
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="basket-register-form-wrapper__inner">
+                                    <label for="">Kraj:</label>
+                                    <select class="basket-register-form-wrapper__country-for-phone" name="country" id="input_country">
+                                        <option value="3" data-region="0">Afganistan</option>
+                                        <option value="6" data-region="0">Albania</option>
+                                        <option value="62" data-region="0">Algieria</option>
+                                        <option value="1" data-region="0">Andora</option>
+                                        <option value="8" data-region="0">Angola</option>
+                                        <option value="5" data-region="0">Anguilla</option>
+                                        <option value="9" data-region="0">Antarktyka</option>
+                                        <option value="4" data-region="0">Antigua i Barbuda</option>
+                                        <option value="193" data-region="0">Arabia Saudyjska</option>
+                                        <option value="10" data-region="0">Argentyna</option>
+                                        <option value="7" data-region="0">Armenia</option>
+                                        <option value="14" data-region="0">Aruba</option>
+                                        <option value="13" data-region="0">Australia</option>
+                                        <option value="12" data-region="0">Austria</option>
+                                        <option value="16" data-region="0">Azerbejdżan</option>
+                                        <option value="32" data-region="0">Bahamy</option>
+                                        <option value="23" data-region="0">Bahrajn</option>
+                                        <option value="19" data-region="0">Bangladesz</option>
+                                        <option value="18" data-region="0">Barbados</option>
+                                        <option value="20" data-region="0">Belgia</option>
+                                        <option value="37" data-region="0">Belize</option>
+                                        <option value="25" data-region="0">Benin</option>
+                                        <option value="27" data-region="0">Bermudy</option>
+                                        <option value="33" data-region="0">Bhutan</option>
+                                        <option value="36" data-region="0">Białoruś</option>
+                                        <option value="29" data-region="0">Boliwia</option>
+                                        <option value="17" data-region="0">Bośnia i Hercegowina</option>
+                                        <option value="35" data-region="0">Botswana</option>
+                                        <option value="31" data-region="0">Brazylia</option>
+                                        <option value="28" data-region="0">Brunei Darussalam</option>
+                                        <option value="106" data-region="0">Brytyjskie Terytorium Oceanu Indyjskiego</option>
+                                        <option value="239" data-region="0">Brytyjskie Wyspy Dziewicze</option>
+                                        <option value="22" data-region="0">Bułgaria</option>
+                                        <option value="21" data-region="0">Burkina Faso</option>
+                                        <option value="24" data-region="0">Burundi</option>
+                                        <option value="46" data-region="0">Chile</option>
+                                        <option value="48" data-region="0">Chiny</option>
+                                        <option value="98" data-region="0">Chorwacja</option>
+                                        <option value="44" data-region="0">Côte d’Ivoire</option>
+                                        <option value="53" data-region="0">Curaçao</option>
+                                        <option value="55" data-region="0">Cypr</option>
+                                        <option value="215" data-region="0">Czad</option>
+                                        <option value="140" data-region="0">Czarnogóra</option>
+                                        <option value="56" data-region="0">Czechy</option>
+                                        <option value="232" data-region="0">Dalekie Wyspy Mniejsze Stanów Zjednoczonych</option>
+                                        <option value="59" data-region="0">Dania</option>
+                                        <option value="40" data-region="0">Demokratyczna Republika Konga</option>
+                                        <option value="60" data-region="0">Dominika</option>
+                                        <option value="61" data-region="0">Dominikana</option>
+                                        <option value="58" data-region="0">Dżibuti</option>
+                                        <option value="65" data-region="0">Egipt</option>
+                                        <option value="63" data-region="0">Ekwador</option>
+                                        <option value="67" data-region="0">Erytrea</option>
+                                        <option value="64" data-region="0">Estonia</option>
+                                        <option value="69" data-region="0">Etiopia</option>
+                                        <option value="72" data-region="0">Falklandy</option>
+                                        <option value="71" data-region="0">Fidżi</option>
+                                        <option value="177" data-region="0">Filipiny</option>
+                                        <option value="70" data-region="0">Finlandia</option>
+                                        <option value="75" data-region="0">Francja</option>
+                                        <option value="216" data-region="0">Francuskie Terytoria Południowe</option>
+                                        <option value="76" data-region="0">Gabon</option>
+                                        <option value="85" data-region="0">Gambia</option>
+                                        <option value="90" data-region="0">Georgia Południowa i Sandwich Południowy</option>
+                                        <option value="82" data-region="0">Ghana</option>
+                                        <option value="83" data-region="0">Gibraltar</option>
+                                        <option value="89" data-region="0">Grecja</option>
+                                        <option value="78" data-region="0">Grenada</option>
+                                        <option value="84" data-region="0">Grenlandia</option>
+                                        <option value="79" data-region="0">Gruzja</option>
+                                        <option value="92" data-region="0">Guam</option>
+                                        <option value="94" data-region="0">Gujana</option>
+                                        <option value="80" data-region="0">Gujana Francuska</option>
+                                        <option value="87" data-region="0">Gwadelupa</option>
+                                        <option value="91" data-region="0">Gwatemala</option>
+                                        <option value="86" data-region="0">Gwinea</option>
+                                        <option value="93" data-region="0">Gwinea Bissau</option>
+                                        <option value="88" data-region="0">Gwinea Równikowa</option>
+                                        <option value="99" data-region="0">Haiti</option>
+                                        <option value="68" data-region="0">Hiszpania</option>
+                                        <option value="166" data-region="0">Holandia</option>
+                                        <option value="97" data-region="0">Honduras</option>
+                                        <option value="95" data-region="0">Hongkong SAR</option>
+                                        <option value="105" data-region="0">Indie</option>
+                                        <option value="101" data-region="0">Indonezja</option>
+                                        <option value="107" data-region="0">Irak</option>
+                                        <option value="108" data-region="0">Iran</option>
+                                        <option value="102" data-region="0">Irlandia</option>
+                                        <option value="250" data-region="0">Irlandia Północna</option>
+                                        <option value="109" data-region="0">Islandia</option>
+                                        <option value="103" data-region="0">Izrael</option>
+                                        <option value="112" data-region="0">Jamajka</option>
+                                        <option value="114" data-region="0">Japonia</option>
+                                        <option value="245" data-region="0">Jemen</option>
+                                        <option value="113" data-region="0">Jordania</option>
+                                        <option value="124" data-region="0">Kajmany</option>
+                                        <option value="117" data-region="0">Kambodża</option>
+                                        <option value="47" data-region="0">Kamerun</option>
+                                        <option value="38" data-region="0">Kanada</option>
+                                        <option value="187" data-region="0">Katar</option>
+                                        <option value="125" data-region="0">Kazachstan</option>
+                                        <option value="115" data-region="0">Kenia</option>
+                                        <option value="116" data-region="0">Kirgistan</option>
+                                        <option value="118" data-region="0">Kiribati</option>
+                                        <option value="49" data-region="0">Kolumbia</option>
+                                        <option value="119" data-region="0">Komory</option>
+                                        <option value="42" data-region="0">Kongo</option>
+                                        <option value="122" data-region="0">Korea Południowa</option>
+                                        <option value="121" data-region="0">Korea Północna</option>
+                                        <option value="50" data-region="0">Kostaryka</option>
+                                        <option value="51" data-region="0">Kuba</option>
+                                        <option value="123" data-region="0">Kuwejt</option>
+                                        <option value="126" data-region="0">Laos</option>
+                                        <option value="132" data-region="0">Lesotho</option>
+                                        <option value="127" data-region="0">Liban</option>
+                                        <option value="131" data-region="0">Liberia</option>
+                                        <option value="136" data-region="0">Libia</option>
+                                        <option value="129" data-region="0">Liechtenstein</option>
+                                        <option value="133" data-region="0">Litwa</option>
+                                        <option value="134" data-region="0">Luksemburg</option>
+                                        <option value="135" data-region="0">Łotwa</option>
+                                        <option value="144" data-region="0">Macedonia</option>
+                                        <option value="142" data-region="0">Madagaskar</option>
+                                        <option value="246" data-region="0">Majotta</option>
+                                        <option value="148" data-region="0">Makau SAR</option>
+                                        <option value="156" data-region="0">Malawi</option>
+                                        <option value="155" data-region="0">Malediwy</option>
+                                        <option value="158" data-region="0">Malezja</option>
+                                        <option value="145" data-region="0">Mali</option>
+                                        <option value="153" data-region="0">Malta</option>
+                                        <option value="149" data-region="0">Mariany Północne</option>
+                                        <option value="137" data-region="0">Maroko</option>
+                                        <option value="150" data-region="0">Martynika</option>
+                                        <option value="151" data-region="0">Mauretania</option>
+                                        <option value="154" data-region="0">Mauritius</option>
+                                        <option value="157" data-region="0">Meksyk</option>
+                                        <option value="73" data-region="0">Mikronezja</option>
+                                        <option value="146" data-region="0">Mjanma (Birma)</option>
+                                        <option value="139" data-region="0">Mołdawia</option>
+                                        <option value="138" data-region="0">Monako</option>
+                                        <option value="147" data-region="0">Mongolia</option>
+                                        <option value="152" data-region="0">Montserrat</option>
+                                        <option value="159" data-region="0">Mozambik</option>
+                                        <option value="160" data-region="0">Namibia</option>
+                                        <option value="169" data-region="0">Nauru</option>
+                                        <option value="168" data-region="0">Nepal</option>
+                                        <option value="30" data-region="0">Niderlandy Karaibskie</option>
+                                        <option value="57" data-region="0">Niemcy</option>
+                                        <option value="162" data-region="0">Niger</option>
+                                        <option value="164" data-region="0">Nigeria</option>
+                                        <option value="165" data-region="0">Nikaragua</option>
+                                        <option value="170" data-region="0">Niue</option>
+                                        <option value="163" data-region="0">Norfolk</option>
+                                        <option value="167" data-region="0">Norwegia</option>
+                                        <option value="161" data-region="0">Nowa Kaledonia</option>
+                                        <option value="171" data-region="0">Nowa Zelandia</option>
+                                        <option value="172" data-region="0">Oman</option>
+                                        <option value="178" data-region="0">Pakistan</option>
+                                        <option value="185" data-region="0">Palau</option>
+                                        <option value="173" data-region="0">Panama</option>
+                                        <option value="176" data-region="0">Papua-Nowa Gwinea</option>
+                                        <option value="186" data-region="0">Paragwaj</option>
+                                        <option value="174" data-region="0">Peru</option>
+                                        <option value="181" data-region="0">Pitcairn</option>
+                                        <option value="175" data-region="0">Polinezja Francuska</option>
+                                        <option value="179" selected="selected" data-region="0">Polska</option>
+                                        <option value="182" data-region="0">Portoryko</option>
+                                        <option value="184" data-region="0">Portugalia</option>
+                                        <option value="247" data-region="0">Republika Południowej Afryki</option>
+                                        <option value="41" data-region="0">Republika Środkowoafrykańska</option>
+                                        <option value="52" data-region="0">Republika Zielonego Przylądka</option>
+                                        <option value="188" data-region="0">Reunion</option>
+                                        <option value="191" data-region="0">Rosja</option>
+                                        <option value="189" data-region="0">Rumunia</option>
+                                        <option value="192" data-region="0">Rwanda</option>
+                                        <option value="66" data-region="0">Sahara Zachodnia</option>
+                                        <option value="120" data-region="0">Saint Kitts i Nevis</option>
+                                        <option value="128" data-region="0">Saint Lucia</option>
+                                        <option value="237" data-region="0">Saint Vincent i Grenadyny</option>
+                                        <option value="26" data-region="0">Saint-Barthélemy</option>
+                                        <option value="141" data-region="0">Saint-Martin</option>
+                                        <option value="180" data-region="0">Saint-Pierre i Miquelon</option>
+                                        <option value="210" data-region="0">Salwador</option>
+                                        <option value="244" data-region="0">Samoa</option>
+                                        <option value="11" data-region="0">Samoa Amerykańskie</option>
+                                        <option value="204" data-region="0">San Marino</option>
+                                        <option value="205" data-region="0">Senegal</option>
+                                        <option value="190" data-region="0">Serbia</option>
+                                        <option value="195" data-region="0">Seszele</option>
+                                        <option value="203" data-region="0">Sierra Leone</option>
+                                        <option value="198" data-region="0">Singapur</option>
+                                        <option value="211" data-region="0">Sint Maarten</option>
+                                        <option value="202" data-region="0">Słowacja</option>
+                                        <option value="200" data-region="0">Słowenia</option>
+                                        <option value="206" data-region="0">Somalia</option>
+                                        <option value="130" data-region="0">Sri Lanka</option>
+                                        <option value="233" data-region="0">Stany Zjednoczone</option>
+                                        <option value="213" data-region="0">Suazi</option>
+                                        <option value="196" data-region="0">Sudan</option>
+                                        <option value="208" data-region="0">Sudan Południowy</option>
+                                        <option value="207" data-region="0">Surinam</option>
+                                        <option value="201" data-region="0">Svalbard i Jan Mayen</option>
+                                        <option value="212" data-region="0">Syria</option>
+                                        <option value="43" data-region="0">Szwajcaria</option>
+                                        <option value="197" data-region="0">Szwecja</option>
+                                        <option value="219" data-region="0">Tadżykistan</option>
+                                        <option value="218" data-region="0">Tajlandia</option>
+                                        <option value="228" data-region="0">Tajwan</option>
+                                        <option value="229" data-region="0">Tanzania</option>
+                                        <option value="183" data-region="0">Terytoria Palestyńskie</option>
+                                        <option value="221" data-region="0">Timor Wschodni</option>
+                                        <option value="217" data-region="0">Togo</option>
+                                        <option value="220" data-region="0">Tokelau</option>
+                                        <option value="224" data-region="0">Tonga</option>
+                                        <option value="226" data-region="0">Trynidad i Tobago</option>
+                                        <option value="223" data-region="0">Tunezja</option>
+                                        <option value="225" data-region="0">Turcja</option>
+                                        <option value="222" data-region="0">Turkmenistan</option>
+                                        <option value="214" data-region="0">Turks i Caicos</option>
+                                        <option value="227" data-region="0">Tuvalu</option>
+                                        <option value="231" data-region="0">Uganda</option>
+                                        <option value="230" data-region="0">Ukraina</option>
+                                        <option value="234" data-region="0">Urugwaj</option>
+                                        <option value="235" data-region="0">Uzbekistan</option>
+                                        <option value="242" data-region="0">Vanuatu</option>
+                                        <option value="243" data-region="0">Wallis i Futuna</option>
+                                        <option value="236" data-region="0">Watykan</option>
+                                        <option value="238" data-region="0">Wenezuela</option>
+                                        <option value="100" data-region="0">Węgry</option>
+                                        <option value="77" data-region="0">Wielka Brytania</option>
+                                        <option value="241" data-region="0">Wietnam</option>
+                                        <option value="110" data-region="0">Włochy</option>
+                                        <option value="34" data-region="0">Wyspa Bouveta</option>
+                                        <option value="54" data-region="0">Wyspa Bożego Narodzenia</option>
+                                        <option value="81" data-region="0">Wyspa Guernsey</option>
+                                        <option value="111" data-region="0">Wyspa Jersey</option>
+                                        <option value="104" data-region="0">Wyspa Man</option>
+                                        <option value="199" data-region="0">Wyspa Świętej Heleny</option>
+                                        <option value="15" data-region="0">Wyspy Alandzkie</option>
+                                        <option value="45" data-region="0">Wyspy Cooka</option>
+                                        <option value="240" data-region="0">Wyspy Dziewicze Stanów Zjednoczonych</option>
+                                        <option value="96" data-region="0">Wyspy Heard i McDonalda</option>
+                                        <option value="39" data-region="0">Wyspy Kokosowe</option>
+                                        <option value="143" data-region="0">Wyspy Marshalla</option>
+                                        <option value="74" data-region="0">Wyspy Owcze</option>
+                                        <option value="194" data-region="0">Wyspy Salomona</option>
+                                        <option value="209" data-region="0">Wyspy Świętego Tomasza i Książęca</option>
+                                        <option value="248" data-region="0">Zambia</option>
+                                        <option value="249" data-region="0">Zimbabwe</option>
+                                        <option value="2" data-region="0">Zjednoczone Emiraty Arabskie</option>
+                                    </select>
+                                </div>
+                                <div class="basket-register-form-wrapper__inner input-chackbox">
+                                    <input class="input-checked" type="checkbox" data-checked-id="another-address" id="address_different">
+                                    <label for="address_different">Inny adres wysyłki</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basket-register-form__container">
+                            <div class="basket-register-form__wrapper basket-register-form-wrapper" id="another-address">
+                                <h4>Inny adres wysyłki</h4>
+                                <div class="basket-register-form-wrapper__inner">
+                                    <div class="basket-register-form-wrapper__item">
+                                        <label for="input_name2">Imię:</label>
+                                        <input class="input" type="text" id="input_name2" name="name2">
+                                        <span class="message">Pole wymagane</span>
+                                    </div>
+                                    <div class="basket-register-form-wrapper__item">
+                                        <label for="input_surname2">Nazwisko:</label>
+                                        <input class="input" type="text" id="input_surname2" name="surname2">
+                                        <span class="message">Pole wymagane</span>
+                                    </div>
+                                    <div class="basket-register-form-wrapper__item">
+                                        <label for="input_phone2">Telefon:</label>
+                                        <input class="input" type="number" id="input_phone2" name="surname2">
+                                        <span class="message">Pole wymagane</span>
+                                    </div>
+                                    <div class="basket-register-form-wrapper__item">
+                                        <label for="input_coname2">Nazwa firmy:</label>
+                                        <input class="input" type="number" id="input_coname2" name="coname2">
+                                        <span class="message">Pole wymagane</span>
+                                    </div>
+                                    <div class="basket-register-form-wrapper__item">
+                                        <label for="input_other_address2">Ulica i nr domu:</label>
+                                        <input class="input" type="number" id="input_other_address2" name="other_address2">
+                                        <span class="message">Pole wymagane</span>
+                                    </div>
+                                    <div class="basket-register-form-wrapper__item">
+                                        <label for="input_zip2">Kod pocztowy:</label>
+                                        <input class="input" type="number" id="input_zip2" name="zip2">
+                                        <span class="message">Pole wymagane</span>
+                                    </div>
+                                    <div class="basket-register-form-wrapper__item">
+                                        <label for="input_city2">Miasto:</label>
+                                        <input class="input" type="number" id="input_city2" name="city2">
+                                        <span class="message">Pole wymagane</span>
+                                    </div>
+                                    <div class="basket-register-form-wrapper__item">
+                                        <label for="input_country2">Kraj:</label>
+                                        <select class="  js__country-for-phone2" name="country2" id="input_country2">
+                                            <option value="179" selected="selected" data-region="0">Polska</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket-register-form__wrapper basket-register-form-wrapper">
+                                <h4>Dodatkowe informacje</h4>
+                                <div class="basket-register-form-wrapper__item textarea">
+                                    <label for="comment">Uwagi</label>
+                                    <textarea name="comment" id="comment"></textarea>
+                                </div>
+                                <div class="basket-register-form-wrapper__item input-chackbox">
+                                    <input type="checkbox" name="additional_4" id="additional_4">
+                                    <label for="additional_4">Zgoda na newsletter</label>
+                                </div>
+                                <div class="basket-register-form-wrapper__item input-chackbox">
+                                    <input type="checkbox" name="additional_3" id="additional_3">
+                                    <label for="additional_3">Wyrażam zgodę na przetwarzanie przez moonie moich danych osobowych w celach marketingowych.</label>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <div class="basket-register__footer basket-register-footer">
+                        <span> - Pole wymagane</span>
+                    </div>
+                </div>
+                <div class="basket-register__btns basket-register-btns">
+                    <a class="basket-register-btns__one" href="./basket-step2.html">Wstecz</a>
+                    <button type="submit" class="basket-register-btns__two" href="#">Podsumowanie</button>
+                </div>
+            </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer__full-version full-version">
+        <span>
+            Pokaż pełną wersję strony
+        </span>
+    </div>
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

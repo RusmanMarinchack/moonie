@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Benefits</title>
+    <link rel="stylesheet" href="./css/fonts-icon.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body class="benefits">
+    <header class="header headers">
+      <div class="header__container _container">
+        <div class="header__logo">
+          <a href="./index.html">
+            <img src="./imgs/svg/logo.svg" alt="Logo" />
+          </a>
+        </div>
+
+        <div class="header__language language mob sublist">
+          <span class="language__active">PL <span>&#8249;</span></span>
+          <div class="language__list">
+            <li class="language__item">
+              <a href="#" class="language__link">PL</a>
+            </li>
+          </div>
+        </div>
+
+        <div class="header__inner">
+          <div class="header__item burger sublist">
+            <span class="_icon-hamburger"></span>
+          </div>
+          <nav class="header__nav nav">
+            <ul class="nav__menu">
+              <li class="nav__item sublist">
+                <a href="#" class="nav__link">SKLEP</a>
+                <span>&#x276E;</span>
+                <ul class="nav__sublist nav-sublist">
+                  <li class="nav-sublist__item">
+                    <a
+                      href="./store.html"
+                      title="SZUMIĄCE MISIE Z LAMPKĄ"
+                      class="nav-sublist__link"
+                      >SZUMIĄCE MISIE Z LAMPKĄ</a
+                    >
+                  </li>
+                  <li class="nav-sublist__item">
+                    <a
+                      href="./store.html"
+                      title="SZUMIĄCE KRÓLICZKI Z LAMPKĄ"
+                      class="nav-sublist__link"
+                      >SZUMIĄCE KRÓLICZKI Z LAMPKĄ</a
+                    >
+                  </li>
+                  <li class="nav-sublist__item">
+                    <a
+                      href="./store.html"
+                      title="KRÓLICZKI SENSORYCZNE"
+                      class="nav-sublist__link"
+                      >KRÓLICZKI SENSORYCZNE</a
+                    >
+                  </li>
+                  <li class="nav-sublist__item">
+                    <a
+                      href="./store.html"
+                      title="NA PREZENTs"
+                      class="nav-sublist__link"
+                      >NA PREZENT</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav__item sublist">
+                <a href="#" class="nav__link">Kolekcje</a>
+                <ul class="nav__sublist nav-sublist">
+                  <li class="nav-sublist__item">
+                    <a href="./collections.html" class="nav-sublist__link"
+                      >SZUMIĄCE MISIE</a
+                    >
+                  </li>
+                  <li class="nav-sublist__item">
+                    <a href="./collections.html" class="nav-sublist__link"
+                      >SZUMIĄCE KRÓLICZKI</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">ZESTAWY</a>
+              </li>
+              <li class="nav__item mob">
+                <a href="./collections.html" class="nav__link"
+                  >SZUMIĄCE MISIE</a
+                >
+              </li>
+              <li class="nav__item mob">
+                <a href="./collections.html" class="nav__link"
+                  >SZUMIĄCE KRÓLICZKI</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="./contact.html" class="nav__link">KONTAKT</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__language language sublist">
+            <span class="language__active">PL <span>&#8249;</span></span>
+            <div class="language__list">
+              <li class="language__item">
+                <a href="#" class="language__link">PL</a>
+              </li>
+            </div>
+          </div>
+
+          <div class="header__icons icons">
+            <div class="icons__item user sublist">
+              <button class="_icon-user">
+                <a href="./login.html"></a>
+              </button>
+              <ul class="icons__office-exit office-exit">
+                <li class="office-exit__item">
+                  <a href="./register.html" class="office-exit__link register"
+                    >Zarejestruj się</a
+                  >
+                </li>
+                <li class="office-exit__item">
+                  <a href="./login.html" class="office-exit__link login"
+                    >Zaloguj się</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="icons__item search sublist">
+              <button class="search__btn">
+                <span class="_icon-loupe"></span>
+              </button>
+              <div class="search__block search-block">
+                <button class="search-block__close">&#10005;</button>
+                <form action="#" class="search-block__form search-block-form">
+                  <div class="search-block-form__item form-item">
+                    <div class="search-block-form__not-value">
+                      <span>&#10006;</span>
+                    </div>
+                    <input
+                      class="input"
+                      type="text"
+                      name="search"
+                      placeholder="Szukaj"
+                    />
+                    <button class="search-block-form__btn" type="submit">
+                      <span class="_icon-loupe"></span>
+                    </button>
+                    <div class="search-block-form__message message">
+                      <p>Wpisz szukane hasło.</p>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div
+              class="icons__item btn-popup basket _icon-cart"
+              data-id="popup-basket"
+            >
+              <a class="bsket-mob" href="./basket.html"></a><span>0</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal header__popup-basket h-popup-basket"
+          id="popup-basket"
+        >
+          <div class="h-popup-basket__popup">
+            <div class="h-popup-basket__header">
+              <h3 class="h-popup-basket__title">Koszyk:</h3>
+              <div class="h-popup-basket__close">
+                <span class="_icon-close"></span>
+              </div>
+            </div>
+
+            <div class="h-popup-basket__product popup-basket-product">
+              <ul class="popup-basket-product__list">
+                <li class="popup-basket-product__item">
+                  <div class="popup-basket-product__imgs">
+                    <img src="./imgs/basket/basket_1.jpg" alt="Product" />
+                  </div>
+                  <a class="popup-basket-product__name" href="#"
+                    >SAND - SZUMIĄCY MIŚ ORGANIC Z LAMPKĄ</a
+                  >
+                  <div class="popup-basket-product__info">
+                    <span class="popup-basket-product__amount">1</span>
+                    x
+                    <span class="popup-basket-product__price">229,00 zł</span>
+                  </div>
+                  <div class="popup-basket-product__remove">
+                    <a href="#"> usuń </a>
+                  </div>
+                </li>
+                <li class="popup-basket-product__item">
+                  <div class="popup-basket-product__imgs">
+                    <img src="./imgs/basket/basket_1.jpg" alt="Product" />
+                  </div>
+                  <a class="popup-basket-product__name" href="#"
+                    >SAND - SZUMIĄCY MIŚ ORGANIC Z LAMPKĄ</a
+                  >
+                  <div class="popup-basket-product__info">
+                    <span class="popup-basket-product__amount">1</span>
+                    x
+                    <span class="popup-basket-product__price">229,00 zł</span>
+                  </div>
+                  <div class="popup-basket-product__remove">
+                    <a href="#"> usuń </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="h-popup-basket__summery popup-basket-summery">
+              <a href="./basket.html">do kasy</a>
+              <div class="popup-basket-summery__prices">
+                <div class="popup-basket-summery__inner">
+                  <span class="popup-basket-summery__suma">suma:</span>
+                  <span class="popup-basket-summery__total"
+                    >229,00&nbsp;zł</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__shadow"></div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="main__benefits benefits">
+        <div class="benefits__container _container">
+          <div class="tabs-body-1__wrapper">
+            <div class="tabs-body-1__item tabs-body-1-item">
+              <div class="tabs-body-1-item__column column-img">
+                <img src="./imgs/zalety1-1.jpg" alt="zalety1" />
+              </div>
+              <div class="tabs-body-1-item__column">
+                <h2>BEZPIECZNE, NATURALNE, RÓŻOWE SZUMY</h2>
+                <p>
+                  Szumiący miś i szumiący króliczek MOONIE uspokajają i usypiają
+                  dzieci bezpiecznymi różowymi szumami nagranymi w naturalnym
+                  środowisku.
+                </p>
+                <p>
+                  Dźwięki szumiącego przyjaciela MOONIE, to prawdziwe nagrania
+                  naturalnych różowych szumów, a nie szumy generowane
+                  komputerowo.
+                </p>
+                <p>
+                  Dzięki temu, że szum bicia serca, jest prawdziwym nagraniem z
+                  wnętrza brzucha mamy, dziecko może uspokoić się i poczuć
+                  bezpiecznie, przy dobrze już znanym dźwięku. Szum fal morskich
+                  został nagrany nad Bałtykiem, a dźwięki leśnego strumienia w
+                  Tarach.
+                </p>
+                <p>
+                  Szumy MOONIE, wygłuszają dźwięki z otoczenia, dzięki czemu,
+                  codzienne, domowe hałasy nie wybudzają maluszka ze snu.
+                </p>
+                <p>
+                  Szumiący przyjaciel MOONIE posiada moduł z możliwością
+                  regulacji głośności, można więc dobrać odpowiedni poziom
+                  głośności do warunków i potrzeb dziecka.
+                </p>
+                <p>
+                  Szumiący króliczek MOONIE ma także kołysankę, która usypia
+                  maluszki dźwiękami kalimby.
+                </p>
+              </div>
+            </div>
+
+            <div class="benefits__music benefits-music">
+                <h3 class="benefits-music__title">POSŁUCHAJ DŹWIĘKÓW MOONIE</h3>
+                <div class="benefits-music__wrapper">
+                    <div class="benefits-music__item">
+                        <audio src="./music/01_heartbeat.wav">
+                        </audio>
+                        <img src="./imgs/slice1.png" alt="slice1">
+                        <span> bicie serca </span>
+                    </div>
+                    <div class="benefits-music__item">
+                        <audio src="./music/02_wind -24.wav">
+                        </audio>
+                        <img src="./imgs/slice2.png" alt="slice2">
+                        <span> wiatr </span>
+                    </div>
+                    <div class="benefits-music__item">
+                        <audio src="./music/03_forest stream -24.wav">
+                        </audio>
+                        <img src="./imgs/slice3.png" alt="slice3">
+                        <span>górski potok</span>
+                    </div>
+                    <div class="benefits-music__item">
+                        <audio src="./music/04_rain.wav">
+                        </audio>
+                        <img src="./imgs/slice4.png" alt="slice4">
+                        <span>deszcz</span>
+                    </div>
+                    <div class="benefits-music__item">
+                        <audio src="./music/05_sea waves.wav">
+                        </audio>
+                        <img src="./imgs/slice5.png" alt="slice5">
+                        <span>fale</span>
+                    </div>
+                    <div class="benefits-music__item">
+                        <audio src="./music/06_lullaby -24.wav">
+                        </audio>
+                        <img src="./imgs/slice6.png" alt="slice6">
+                        <span>łagodna</span>
+                        <span>kołysanka</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tabs-body-1__item tabs-body-1-item">
+              <div class="tabs-body-1-item__column">
+                <h2>DLACZEGO RÓŻOWE SZUMY?</h2>
+                <p>
+                  Dzieci, będąc jeszcze w brzuchu mamy, otoczone są dźwiękami o
+                  niskich częstotliwościach, dlatego dźwięki misia MOONIE,
+                  <strong
+                    >to bezpieczne naturalne różowe szumy, w których dominują
+                    dźwięki o niskich częstotliwościach</strong
+                  >.
+                </p>
+                <p>
+                  W różowym szumie moc akustyczna wysokich częstotliwość opada,
+                  dzięki czemu dźwięki o wysokich częstotliwościach są na
+                  bezpiecznym poziomie dla maluszków, a dla dorosłego są prawie
+                  niesłyszalne.
+                </p>
+                <p>
+                  W białym szumie moc akustyczna dla wszystkich częstotliwości
+                  pozostaje na niezmiennym poziomie (pozioma linia na wykresie).
+                  W rzeczywistości oznacza to, że dźwięki o wyższych
+                  częstotliwościach, przy tym samym poziomie mocy, są bardziej
+                  słyszalne niż dźwięki o niższych częstotliwościach.
+                </p>
+              </div>
+              <div class="tabs-body-1-item__column column-img order">
+                <img src="./imgs/wykres_strona_eng.png" alt="zalety3" />
+              </div>
+            </div>
+
+            <div class="tabs-body-1__item tabs-body-1-item">
+              <div class="tabs-body-1-item__column column-img">
+                <img src="./imgs/zalety3-1.jpg" alt="zalety4" />
+              </div>
+              <div class="tabs-body-1-item__column">
+                <h2>DLACZEGO RÓŻOWE SZUMY?</h2>
+                <p>
+                  Dzieci, będąc jeszcze w brzuchu mamy, otoczone są dźwiękami o
+                  niskich częstotliwościach, dlatego dźwięki króliczka MOONIE,
+                  to bezpieczne naturalne różowe szumy, w których dominują
+                  dźwięki o niskich częstotliwościach.
+                </p>
+                <p>
+                  W różowym szumie moc akustyczna wysokich częstotliwość opada,
+                  dzięki czemu dźwięki o wysokich częstotliwościach są na
+                  bezpiecznym poziomie dla maluszków, a dla dorosłego są prawie
+                  niesłyszalne.
+                </p>
+                <p>
+                  W białym szumie moc akustyczna dla wszystkich częstotliwości
+                  pozostaje na niezmiennym poziomie (pozioma linia na wykresie).
+                  W rzeczywistości oznacza to, że dźwięki o wyższych
+                  częstotliwościach, przy tym samym poziomie mocy, są bardziej
+                  słyszalne niż dźwięki o niższych częstotliwościach.
+                </p>
+              </div>
+            </div>
+
+            <div class="tabs-body-1__item tabs-body-1-item">
+              <div class="tabs-body-1-item__column">
+                <h2>SZUMIĄCY PRZYJACIEL Z LAMPKĄ NOCNĄ</h2>
+                <p>
+                  Każdy szumiący miś i szumiący króliczek MOONIE jest też lampką
+                  nocną, która może świecić na 7 różnych odcieni.
+                </p>
+                <p>
+                  Delikatne światło pozwala na nakarmienie i przewinięcie
+                  dziecka, bez zapalania górnego światła.
+                </p>
+                <p>
+                  Kiedy dziecko zaczyna płakać, lampka włącza się wraz z szumem,
+                  oświetla i uspakaja maluszka.
+                </p>
+                <p>Lampka LED nie nagrzewa się, jest w pełni bezpieczna.</p>
+                <p>
+                  Szumiący króliczek i szumiący miś MOONIE, świetnie sprawdzają
+                  się też przy starszych dzieciach, które często mają lęki nocne
+                  i boją się ciemności. Można wtedy włączyć samą lampkę bez
+                  dźwięku i zostawić ją zapaloną na całą noc.
+                </p>
+              </div>
+              <div class="tabs-body-1-item__column column-img order">
+                <img src="./imgs/zalety4-1.jpg" alt="zalety4" />
+              </div>
+            </div>
+
+            <div class="tabs-body-1__item tabs-body-1-item">
+              <div class="tabs-body-1-item__column column-img">
+                <img src="./imgs/zalety5-1.jpg" alt="zalety5" />
+              </div>
+              <div class="tabs-body-1-item__column">
+                <h2>NIEZAWODNY, INTELIGENTNY CZUJNIK PŁACZU</h2>
+                <p>
+                  Szumiący miś i szumiący króliczek MOONIE posiadają
+                  inteligentny czujnik płaczu, stworzony z myślą o sytuacjach, w
+                  których dzidziuś nagle budzi się ze snu.
+                </p>
+                <p>
+                  Włączona funkcja inteligentnego czujnika płaczu czuwa nad
+                  spokojnym snem maluszka. Gdy tylko dziecko przebudzi się i
+                  zacznie płakać, szumiący króliczek MOONIE uruchamia
+                  bezpieczny, naturalny różowy szum i wycisza maleństwo.
+                </p>
+                <p>
+                  Szumiący króliczek MOONIE zawsze wycisza się po 30 minutach i
+                  automatycznie przechodzi 3 godzinny w tryb czuwania. Płacz
+                  dziecka uruchamia ostatnio wybrany szum na kolejne 30 minut,
+                  następnie, cykl powtarza się.
+                </p>
+                <p>
+                  Inteligentny czujnik płaczu zapamiętuje ostatnie ustawienie
+                  szumu i światła. Można więc tak zaprogramować szumiącego
+                  króliczka MOONIE aby po ponownym uruchomieniu odtworzył
+                  ulubione ustawienia lampki i dźwięku lub samego dźwięku.
+                </p>
+                <p>
+                  Inteligentny czujnik płaczu można również uruchomić bez
+                  włączania szumów. Szumiący króliczek MOONIE położony przy
+                  dziecku, z uruchomionym inteligentnym czujnikiem płaczu, daje
+                  pewność, że podczas najbliższych 3 godzin snu maluszka,
+                  czujnik płaczu będzie czuwał i zareaguje, na jego płacz.
+                </p>
+              </div>
+            </div>
+
+            <div class="tabs-body-1__item tabs-body-1-item">
+              <div class="tabs-body-1-item__column">
+                <h2>ŁADOWANIE PRZEZ USB</h2>
+                <p>
+                  Pojawienie się noworodka w domu to ogromna zmiana i wyzwanie.
+                  Nie warto dodatkowo utrudniać sobie życia pobudkami o 3 rano i
+                  wymianą baterii. Nasz moduł ładowany jest przez USB. Wygodnie,
+                  oszczędnie, ekologicznie.
+                </p>
+                <p>
+                  MOONIE jest jedyną szumiącą zabawką, która nie wymaga zakupu
+                  baterii i od nowości ma już naładowany moduł. Można z niego
+                  korzystać od razu po rozpakowaniu. Projektując szumiącego
+                  króliczka i misia MOONIE chcieliśmy, żeby zabawka była
+                  przyjazna środowisku i nie zmuszała do kupowania wciąż nowych
+                  baterii.
+                </p>
+                <p>
+                  Moduł MOONIE do pełnego naładowania potrzebuje 3 godzin. W
+                  pełni naładowana bateria wystarcza na ok 8 godzin ciągłej
+                  pracy przy włączonym świetle i dźwięku. Do szumiącej zabawki
+                  MOONIE dołączony jest kabelek USB.
+                </p>
+              </div>
+              <div class="tabs-body-1-item__column column-img order">
+                <img src="./imgs/zalety6-1.jpg" alt="zalety6-1" />
+              </div>
+            </div>
+
+            <div class="tabs-body-1__item tabs-body-1-item">
+              <div class="tabs-body-1-item__column column-img">
+                <img src="./imgs/zalety7-1.jpg" alt="img_mis7" />
+              </div>
+              <div class="tabs-body-1-item__column">
+                <h2>PRODUKT POLSKI, DOBRY DESIGN</h2>
+                <p>
+                  MOONIE nie jest produktem masowym. Najwyższa jakość i
+                  bezpieczeństwo są dla nas najważniejsze, dlatego skupiamy się
+                  na produkcji w Polsce.
+                </p>
+                <p>
+                  Wszystkie zabawki MOONIE szyjemy w naszej własnej pracowni.
+                </p>
+                <p>
+                  Ideą wzornictwa MOONIE jest prostota i elegancja. Wierzymy, że
+                  dzieci które otaczamy dobrze zaprojektowanymi rzeczami,
+                  wyrabiają w sobie poczucie estetyki i wrażliwość na piękno.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner footer-inner">
+        <div class="footer-inner__container _container">
+          <div class="footer-inner__item accordion">
+            <div class="accordion__header">
+              WAŻNE LINKI <span>&#10094;</span>
+            </div>
+            <div class="accordion__body">
+              <a href="/strona/instrukcje" title="INSTRUKCJE MOONIE">
+                INSTRUKCJE MOONIE
+              </a>
+            </div>
+          </div>
+          <div class="footer-inner__item accordion">
+            <div class="accordion__header">
+              Informacje <span>&#10094;</span>
+            </div>
+            <div class="accordion__body">
+              <a
+                href="/strona/www-moonie-shoplo-com-dostawa"
+                title="METODY DOSTAWY I PŁATNOŚCI"
+              >
+                METODY DOSTAWY I PŁATNOŚCI
+              </a>
+              <a href="/regulaminy" title="Regulaminy"> Regulaminy </a>
+              <a href="/politykaprywatnosci" title="Polityka prywatności">
+                Polityka prywatności
+              </a>
+              <a href="/zwroty-i-reklamacje" title="Zwroty i reklamacje">
+                Zwroty i reklamacje
+              </a>
+            </div>
+          </div>
+          <div class="footer-inner__item accordion">
+            <div class="accordion__header">
+              NASZE PRODUKTY <span>&#10094;</span>
+            </div>
+            <div class="accordion__body">
+              <a
+                href="/kategoria/szumiace-kroliczki-z-lampka"
+                title="SZUMIĄCY KRÓLICZEK Z LAMPKĄ"
+              >
+                SZUMIĄCY KRÓLICZEK Z LAMPKĄ
+              </a>
+              <a href="/kategoria/moonie-mini" title="KRÓLICZKI SENSORYCZNE">
+                KRÓLICZKI SENSORYCZNE
+              </a>
+              <a
+                href="/kategoria/lniane-uspokajacze"
+                title="LNIANE PRZYTULANKI"
+              >
+                LNIANE PRZYTULANKI
+              </a>
+              <a href="/kategoria/zestawy" title="ZESTAWY"> ZESTAWY </a>
+              <a href="/kategoria/na-prezent" title="NA PREZENT">
+                NA PREZENT
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__user footer-user">
+        <div class="footer-user__container _container">
+          <div class="footer-user__item logo">
+            <a href="./index.html">
+              <img src="./imgs/svg/logo.svg" alt="Logo" />
+            </a>
+          </div>
+          <div class="footer-user__item moonie">
+            <a href="mailto:hello@moonie.pl">HELLO@MOONIE.PL</a>
+          </div>
+          <div class="footer-user__item social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a
+                  href="https://www.facebook.com/moonie.friend"
+                  class="social__link"
+                >
+                  <span class="_icon-facebook"></span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  href="https://www.instagram.com/moonie_friend/"
+                  class="social__link"
+                >
+                  <span class="_icon-instagram"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__full-version full-version">
+        <span> Pokaż pełną wersję strony </span>
+      </div>
+
+      <div class="footer__bottom footer-bottom">
+        <div class="footer-bottom__container _container">
+          <a href="https://www.kifa.ws/">Kifa</a>
+        </div>
+      </div>
+
+      <div class="footer__btn-start">
+        <button>&#10094;</button>
+      </div>
+    </footer>
+
+    <script src="https://raw.github.com/defunkt/jquery-pjax/master/jquery.pjax.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

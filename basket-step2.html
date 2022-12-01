@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basket step2</title>
+    <link rel="stylesheet" href="./css/fonts-icon.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    
+    <header class="header-basket-step headers">
+        <div class="header-basket-step__container _container">
+            <div class="header-basket-step__logo">
+                <a href="./index.html">
+                    <img src="./imgs/svg/logo.svg" alt="Logo">
+                </a>
+            </div>
+
+            <div class="header-basket-step__progres progres">
+                <ul class="progres__list">
+                    <li class="progres__item passed">
+                        <div class="progres__namber">
+                            1
+                        </div>
+                        <a href="#">
+                            Koszyk
+                        </a>
+                    </li>
+                    <li class="progres__item passed">
+                        <div class="progres__namber">
+                            2
+                        </div>
+                        <a href="#">Twoje dane</a>
+                    </li>
+                    <li class="progres__item">
+                        <div class="progres__namber">
+                            3
+                        </div>
+                        <a href="#">Podsumowanie</a>
+                    </li>
+                    <li class="progres__item">
+                        <div class="progres__namber">
+                            4
+                        </div>
+                        <a href="#">Potwierdzenie</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="main__basket-step2 basket-step2">
+            <div class="basket-step2__container _container">
+                <div class="basket-step2__wrapper basket-step2-wrapper">
+                    <div class="basket-step2-wrapper__item register">
+                        <div class="basket-step2-wrapper__inner">
+                            <h3>
+                                Nie mam jeszcze konta
+                            </h3>
+                            <p>Załóż konto, aby skorzystać z przywilejów dla stałych klientów:</p>
+                            <ul>
+                                <li><span>&#8226;</span> podgląd statusu realizacji zamówień i historii zakupów</li>
+                                <li><span>&#8226;</span> brak konieczności wprowadzania swoich danych przy kolejnych zakupach</li>
+                                <li><span>&#8226;</span> możliwość otrzymania rabatów i kuponów promocyjnych</li>
+                            </ul>
+                        </div>
+
+                        <form action="#">
+                            <button type="submit">
+                                Zarejestruj się
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="basket-step2-wrapper__item no-register">
+                        <div class="basket-step2-wrapper__inner">
+                            <h3>
+                                Zakupy bez rejestracji
+                            </h3>
+                            <p>Aby złożyć zamówienie nie musisz zakładać konta w naszym sklepie.</p>
+                            <p>Wybierz przycisk "Złóż zamówienie"</p>
+                        </div>
+
+                        <form action="#">
+                            <button>Złóż zamówienie</button>
+                        </form>
+                    </div>
+
+                    <div class="basket-step2-wrapper__item login">
+                        <h3>
+                            Mam już konto w sklepie
+                        </h3>
+                        <form action="#" class="login__form login-form">
+                            <div class="login-form__item">
+                                <label for="input_mail">E-mail:</label>
+                                <input type="email" id="input_mail">
+                            </div>
+                            <div class="login-form__item">
+                                <label for="input_pass">Hasło:</label>
+                                <input type="password" id="input_pass">
+                            </div>
+                            <div class="login-form__item link">
+                                Nie pamiętasz hasła? <a href="./change-password.html">Kliknij tutaj</a>
+                            </div>
+                            <div class="login-form__block-btn">
+                                <button class="login-form__btn" type="submit">Zaloguj się</button>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer__full-version full-version">
+        <span>
+            Pokaż pełną wersję strony
+        </span>
+    </div>
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>

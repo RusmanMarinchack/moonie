@@ -1,0 +1,325 @@
+.basket-register {
+  margin-bottom: 40px;
+}
+
+.basket-register__container .basket-register-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1em;
+  border: 1px solid #f2f2f2;
+  font-size: 12px;
+  border-radius: 2px;
+}
+
+.basket-register__container .basket-register-btns a {
+  display: inline-block;
+  padding: 0.35em 0.85em;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.basket-register__container .basket-register-btns button {
+  display: inline-block;
+  padding: 0.35em 0.85em;
+  border: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.basket-register__container .basket-register-btns a:hover, .basket-register__container .basket-register-btns button:hover {
+  background: #000;
+}
+
+.basket-register__wrapper {
+  position: relative;
+  border: 1px solid #d8d8d8;
+  padding: 20px;
+}
+
+.basket-register__wrapper h4 {
+  font-size: 18px;
+}
+
+.basket-register .basket-register-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  row-gap: 15px;
+  padding-bottom: 40px;
+}
+
+@media screen and (max-width: 991.98px) {
+  .basket-register .basket-register-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.basket-register .basket-register-form__container {
+  width: 50%;
+}
+
+@media screen and (max-width: 991.98px) {
+  .basket-register .basket-register-form__container {
+    width: 100%;
+  }
+}
+
+.basket-register .basket-register-form .basket-register-form-wrapper#another-address {
+  display: none;
+}
+
+.basket-register .basket-register-form .basket-register-form-wrapper#another-address .basket-register-form-wrapper__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.basket-register .basket-register-form .basket-register-form-wrapper#another-address.active {
+  display: block;
+}
+
+.basket-register .basket-register-form .basket-register-form-wrapper .input-chackbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5px;
+  margin-left: 10.5em;
+}
+
+@media screen and (max-width: 991.98px) {
+  .basket-register .basket-register-form .basket-register-form-wrapper .input-chackbox {
+    margin-left: 0;
+  }
+}
+
+.basket-register .basket-register-form .basket-register-form-wrapper .input-chackbox label {
+  width: 19.5em !important;
+}
+
+.basket-register .basket-register-form .basket-register-form-wrapper__inner.active-form {
+  display: none;
+}
+
+.basket-register .basket-register-form .basket-register-form-wrapper__inner.active-form.active {
+  display: block;
+}
+
+.basket-register .basket-register-form .basket-register-form-wrapper__inner label {
+  display: inline-block;
+  width: 10em;
+  text-align: end;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 575.98px) {
+  .basket-register .basket-register-form .basket-register-form-wrapper__inner label {
+    display: block;
+    width: auto;
+    text-align: start !important;
+    margin-bottom: 5px;
+  }
+}
+
+.basket-register .basket-register-form .basket-register-form-wrapper__inner select {
+  max-width: 280px;
+  width: 100%;
+  border: 1px solid #d8d8d8;
+  font-size: 14px;
+  padding: 13px 30px;
+  line-height: 1;
+  min-height: 35px;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.basket-register .basket-register-form .basket-register-form-wrapper__item {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 575.98px) {
+  .basket-register .basket-register-form .basket-register-form-wrapper__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .basket-register .basket-register-form .basket-register-form-wrapper__item.input-radio {
+    -webkit-box-orient: inherit;
+    -webkit-box-direction: inherit;
+        -ms-flex-direction: inherit;
+            flex-direction: inherit;
+  }
+}
+
+.basket-register .basket-register-form .basket-register-form-wrapper__item.textarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 575.98px) {
+  .basket-register .basket-register-form .basket-register-form-wrapper__item.textarea {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.basket-register .basket-register-form .basket-register-form-wrapper__item.textarea textarea {
+  max-width: 280px;
+  width: 100%;
+  min-height: 50px;
+  border: 1px solid #d8d8d8;
+  color: #000;
+  padding: 13px 30px;
+  margin-bottom: 4px;
+  line-height: 1;
+  height: auto;
+  outline: none;
+  resize: vertical;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.basket-register .basket-register-form .basket-register-form-wrapper__item.textarea textarea:focus {
+  border-color: #000;
+}
+
+.basket-register .basket-register-form .basket-register-form-wrapper__item.password input {
+  max-width: 250px;
+  width: 100%;
+}
+
+.basket-register .basket-register-form .basket-register-form-wrapper__item label {
+  width: 10em;
+  display: inline-block;
+  line-height: 30px;
+  text-align: end;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 575.98px) {
+  .basket-register .basket-register-form .basket-register-form-wrapper__item label {
+    width: auto;
+    text-align: start !important;
+  }
+}
+
+.basket-register .basket-register-form .basket-register-form-wrapper__item input {
+  max-width: 280px;
+  width: 100%;
+  border: 1px solid #d8d8d8;
+  font-size: 14px;
+  padding: 13px 30px;
+  line-height: 1;
+  min-height: 35px;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.basket-register .basket-register-form .basket-register-form-wrapper__item input:focus {
+  border-color: #000;
+}
+
+.basket-register .basket-register-form .basket-register-form-wrapper__item .message {
+  display: none;
+}
+
+.input-radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 11em;
+}
+
+@media screen and (max-width: 575.98px) {
+  .input-radio {
+    margin-left: 0;
+  }
+}
+
+.input-radio__inner {
+  text-align: center;
+}
+
+.input-radio__inner label {
+  width: auto !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.input-radio__inner label::before {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  background: transparent;
+  border: 1px solid #d8d8d8;
+  border-radius: 50%;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.input-radio__inner label::after {
+  content: '';
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  width: 14px;
+  min-width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 3.5px;
+  top: 3.5px;
+  background: #000;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.input-radio__inner input {
+  display: none;
+}
+
+.input-radio__inner input:checked ~ label::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.input-radio__inner .basket-register-footer {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+/*# sourceMappingURL=basket-register.css.map */

@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/lightgallery.css">
+    <link rel="stylesheet" href="./css/lg-zoom.css">
+    <link rel="stylesheet" href="./css/lg-thumbnail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/css/lightgallery-bundle.min.css" integrity="sha512-nUqPe0+ak577sKSMThGcKJauRI7ENhKC2FQAOOmdyCYSrUh0GnwLsZNYqwilpMmplN+3nO3zso8CWUgu33BDag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/fonts-icon.css">
+</head>
+<body>
+
+    <header class="header headers">
+        <div class="header__container _container">
+            <div class="header__logo">
+                <a href="./index.html">
+                    <img src="./imgs/svg/logo.svg" alt="Logo">
+                </a>
+            </div>
+
+            <div class="header__language language mob sublist">
+                <span class="language__active">PL <span>&#8249;</span></span>
+                <div class="language__list">
+                    <li class="language__item"><a href="#" class="language__link">PL</a></li>
+                </div>
+            </div>
+
+            <div class="header__inner">
+                <div class="header__item burger sublist">
+                    <span class="_icon-hamburger"></span>
+                </div>
+                <nav class="header__nav nav">
+                    <ul class="nav__menu">
+                        <li class="nav__item sublist">
+                            <a href="#" class="nav__link">SKLEP</a>
+                            <span>&#x276E;</span>
+                            <ul class="nav__sublist nav-sublist">
+                                <li class="nav-sublist__item"><a href="./store.html" title="SZUMIĄCE MISIE Z LAMPKĄ" class="nav-sublist__link">SZUMIĄCE MISIE Z LAMPKĄ</a></li>
+                                <li class="nav-sublist__item"><a href="./store.html" title="SZUMIĄCE KRÓLICZKI Z LAMPKĄ" class="nav-sublist__link">SZUMIĄCE KRÓLICZKI Z LAMPKĄ</a></li>
+                                <li class="nav-sublist__item"><a href="./store.html" title="KRÓLICZKI SENSORYCZNE" class="nav-sublist__link">KRÓLICZKI SENSORYCZNE</a></li>
+                                <li class="nav-sublist__item"><a href="./store.html" title="NA PREZENTs" class="nav-sublist__link">NA PREZENT</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__item sublist">
+                            <a href="#" class="nav__link">Kolekcje</a>
+                            <ul class="nav__sublist nav-sublist">
+                                <li class="nav-sublist__item"><a href="./collections.html" class="nav-sublist__link">SZUMIĄCE MISIE</a></li>
+                                <li class="nav-sublist__item"><a href="./collections.html" class="nav-sublist__link">SZUMIĄCE KRÓLICZKI</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__item"><a href="#" class="nav__link">ZESTAWY</a></li>
+                        <li class="nav__item mob"><a href="./collections.html" class="nav__link">SZUMIĄCE MISIE</a></li>
+                        <li class="nav__item mob"><a href="./collections.html" class="nav__link">SZUMIĄCE KRÓLICZKI</a></li>
+                        <li class="nav__item"><a href="./contact.html" class="nav__link">KONTAKT</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header__language language sublist">
+                    <span class="language__active">PL <span>&#8249;</span></span>
+                    <div class="language__list">
+                        <li class="language__item"><a href="#" class="language__link">PL</a></li>
+                    </div>
+                </div>
+
+                <div class="header__icons icons">
+                    
+
+                    <div class="icons__item user sublist">
+                        <button class="_icon-user">
+                            <a href="./login.html"></a>
+                        </button>
+                        <ul class="icons__office-exit office-exit">
+                            <li class="office-exit__item"><a href="./register.html" class="office-exit__link register">Zarejestruj się</a></li>
+                            <li class="office-exit__item"><a href="./login.html" class="office-exit__link login">Zaloguj się</a></li>
+                        </ul>
+                    </div>
+                    <div class="icons__item search sublist">
+                        <button class="search__btn"><span class="_icon-loupe"></span></button>
+                        <div class="search__block search-block">
+                            <button class="search-block__close">&#10005;</button>
+                            <form action="#" class="search-block__form search-block-form">
+                                <div class="search-block-form__item form-item">
+                                    <div class="search-block-form__not-value"><span>&#10006;</span></div>
+                                    <input class="input" type="text" name="search" placeholder="Szukaj">
+                                    <button class="search-block-form__btn" type="submit"><span class="_icon-loupe"></span></button>
+                                    <div class="search-block-form__message message">
+                                        <p>Wpisz szukane hasło.</p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="icons__item btn-popup basket _icon-cart" data-id="popup-basket"><a class="bsket-mob" href="./basket.html"></a><span>0</span></div>
+                </div>
+            </div>
+            
+            <div class="modal header__popup-basket h-popup-basket" id="popup-basket">
+                <div class="h-popup-basket__popup">
+                    <div class="h-popup-basket__header">
+                        <h3 class="h-popup-basket__title">Koszyk:</h3>
+                        <div class="h-popup-basket__close">
+                            <span class="_icon-close"></span>
+                        </div>
+                    </div>
+
+                    <div class="h-popup-basket__product popup-basket-product">
+                        <ul class="popup-basket-product__list">
+                            <li class="popup-basket-product__item">
+                                <div class="popup-basket-product__imgs">
+                                    <img src="./imgs/basket/basket_1.jpg" alt="Product">
+                                </div>
+                                <a class="popup-basket-product__name" href="#">SAND - SZUMIĄCY MIŚ ORGANIC Z LAMPKĄ</a>
+                                <div class="popup-basket-product__info">
+                                    <span class="popup-basket-product__amount">1</span>
+                                    x
+                                    <span class="popup-basket-product__price">229,00 zł</span>
+                                </div>
+                                <div class="popup-basket-product__remove">
+                                    <a href="#">
+                                        usuń
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="popup-basket-product__item">
+                                <div class="popup-basket-product__imgs">
+                                    <img src="./imgs/basket/basket_1.jpg" alt="Product">
+                                </div>
+                                <a class="popup-basket-product__name" href="#">SAND - SZUMIĄCY MIŚ ORGANIC Z LAMPKĄ</a>
+                                <div class="popup-basket-product__info">
+                                    <span class="popup-basket-product__amount">1</span>
+                                    x
+                                    <span class="popup-basket-product__price">229,00 zł</span>
+                                </div>
+                                <div class="popup-basket-product__remove">
+                                    <a href="#">
+                                        usuń
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="h-popup-basket__summery popup-basket-summery">
+                        <a href="./basket.html">do kasy</a>
+                        <div class="popup-basket-summery__prices">
+                            <div class="popup-basket-summery__inner">
+                                <span class="popup-basket-summery__suma">suma:</span>
+                                <span class="popup-basket-summery__total">229,00&nbsp;zł</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__shadow"></div>
+        </div>
+    </header>
+    
+    <main class="main">
+        <section class="main__product product">
+            <div class="product__container _container">
+                <div class="product__inner">
+                    <div class="product__gallery product-gallery">
+                        <div class="product-gallery__big-img">
+                            <img src="./imgs/product/20201119_Moonie_6730.jpg" alt="20201119_Moonie_6730" data-count="0">
+                        </div>
+                        <div class="product-gallery__small-gallery small-gallery">
+                            <div class="small-gallery__swiper swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="small-gallery__swiper-wrapper swiper-wrapper">
+                                  <!-- Slides -->
+                                  <a href="./imgs/product-big-slider/20201119_Moonie_6730 (1).jpg" class="small-gallery__swiper-slide swiper-slide">
+                                    <img src="./imgs/product-min-slider/20201119_Moonie_6730.jpg" data-img-id="0" data-src="./imgs/product-big-slider/20201119_Moonie_6730 (1).jpg" alt="20201119_Moonie_6730">
+                                  </a>
+                                  <a href="./imgs/product-big-slider/www-01.jpg" class="small-gallery__swiper-slide swiper-slide">
+                                    <img src="./imgs/product-min-slider/www-01.jpg" data-img-id="1" data-src="./imgs/product-big-slider/www-01.jpg" alt="www-01">
+                                  </a>
+                                  <a href="./imgs/product-big-slider/www-02.jpg" class="small-gallery__swiper-slide swiper-slide">
+                                    <img src="./imgs/product-min-slider/www-02.jpg" data-img-id="2" data-src="./imgs/product-big-slider/www-02.jpg" alt="www-02">
+                                  </a>
+                                  <a href="./imgs/product-big-slider/www-03.jpg" class="small-gallery__swiper-slide swiper-slide">
+                                    <img src="./imgs/product-min-slider/www-03.jpg" data-img-id="3" data-src="./imgs/product-big-slider/www-03.jpg" alt="www-03">
+                                  </a>
+                                  <a href="./imgs/product-big-slider/www-04.jpg" class="small-gallery__swiper-slide swiper-slide">
+                                    <img src="./imgs/product-min-slider/www-04.jpg" data-img-id="4" data-src="./imgs/product-big-slider/www-04.jpg" alt="www-04">
+                                  </a>
+                                  <a href="./imgs/product-big-slider/www-08.jpg" class="small-gallery__swiper-slide swiper-slide">
+                                    <img src="./imgs/product-min-slider/www-07.jpg" data-img-id="5" data-src="./imgs/product-big-slider/www-08.jpg" alt="www-07">
+                                  </a>
+                                  <a href="./imgs/product-big-slider/www-01.jpg" class="small-gallery__swiper-slide swiper-slide">
+                                    <img src="./imgs/product-min-slider/www-08.jpg" data-img-id="6" data-src="./imgs/product-big-slider/www-01.jpg" alt="www-08">
+                                  </a>
+                                  <a href="./imgs/product-big-slider/www-13.jpg" class="small-gallery__swiper-slide swiper-slide">
+                                    <img src="./imgs/product-min-slider/www-13.jpg" data-img-id="7" data-src="./imgs/product-big-slider/www-13.jpg" alt="www-13">
+                                  </a>
+                                  <a href="./imgs/product-big-slider/www-14.jpg" class="small-gallery__swiper-slide swiper-slide">
+                                    <img src="./imgs/product-min-slider/www-14.jpg" data-img-id="8" data-src="./imgs/product-big-slider/www-14.jpg" alt="www-14">
+                                  </a>
+                                </div>
+                              
+                                <!-- If we need navigation buttons -->
+                                <div class="small-gallery__swiper-button-prev swiper-button-prev"><span></span></div>
+                                <div class="small-gallery__swiper-button-next swiper-button-next"><span></span></div>
+                              </div>
+                        </div>
+                    </div>
+    
+                    <div class="product__info product-info">
+                        <a href="#" class="product-info__add-fav"><span class="_icon-like-transparent"></span> dodaj do przechowalni</a>
+    
+                        <h1 class="product-info__title">
+                            CAPPUCCINO - SZUMIĄCY MIŚ ORGANIC Z LAMPKĄ
+                        </h1>
+                        <div class="product-info__availabilit availabilit">
+                            <div class="availabilit__item">
+                                <div class="availabilit__lavel">Dostępność:</div>
+                                <div class="availabilit__value">duża ilość</div>
+                            </div>
+                            <div class="availabilit__item">
+                                <div class="availabilit__lavel">Wysyłka w:</div>
+                                <div class="availabilit__value">2-3 robocze dni</div>
+                            </div>
+                        </div>
+    
+                        <div class="product-info__basket product-info-basket">
+                            <div class="product-info-basket__prices">
+                                <span>Cena:</span>
+                                <div class="price">229,00&nbsp;zł</div>
+                            </div>
+    
+                            <form action="#" class="product-info-basket__form form">
+                                <div class="form__length">
+                                    <input type="text" value="1">
+                                    <span>szt.</span>
+                                </div>
+    
+                                <div class="form__btn">
+                                    <button class="btn-popup" data-id="box-products-modal-two" type="submit">Do koszyka <span class="_icon-arrow-up-left2"></span></button>
+                                </div>
+                            </form>
+                        </div>
+    
+                        <div class="product-info__text">
+                            <p>Szumiący miś MOONIE ORGANIC, to profesjonalna pomoc w usypianiu</p>
+                            <p>maluszków, wykonana z atestowanej bawełny organicznej. Dzięki</p>
+                            <p>bezpiecznym, naturalnym różowym szumom, pozwala dzieciom szybciej</p>
+                            <p>wyciszyć się i zasnąć. A to jeszcze nie wszystko! MOONIE jest też lampką</p>
+                            <p>nocną, która może świecić na 7 różnych kolorów, posiada czujnik płaczu i</p>
+                            <p>jest ładowany przez USB. Pięknie zapakowany, idealnie nadaje się na</p>
+                            <p>prezent. Wyprawkowy MUST HAVE!</p>
+                        </div>
+    
+                        <div class="product-info__detalis product-info-detalis">
+                            <div class="product-info-detalis__inner">
+                                <div class="product-info-detalis__item evaluation">
+                                    <p>Ocena:</p>
+                                    <ul class="evaluation__list">
+                                        <li class="evaluation__item"><span class="_icon-star1"></span></li>
+                                        <li class="evaluation__item"><span class="_icon-star1"></span></li>
+                                        <li class="evaluation__item"><span class="_icon-star1"></span></li>
+                                        <li class="evaluation__item"><span class="_icon-star1"></span></li>
+                                        <li class="evaluation__item"><span class="_icon-star1"></span></li>
+                                    </ul>
+                                </div>
+                                <div class="product-info-detalis__item manufacturer">
+                                    <span>Producent: </span>
+                                    <a href="#" target="_blank">
+                                        MOONIE
+                                    </a>
+                                </div>
+                                <div class="product-info-detalis__item code">
+                                    <p>Kod produktu:</p>
+                                    <span>M-CA</span>
+                                </div>
+                            </div>
+    
+                            <div class="product-info-detalis__links links">
+                                <ul class="links__list">
+                                    <li class="links__item">
+                                        <a href="#" class="links__link"><span class="_icon-filled-message"></span>zapytaj o produkt</a>
+                                    </li>
+                                    <li class="links__item">
+                                        <a href="#" class="links__link"><span class="_icon-like"></span>poleć znajomemu</a>
+                                    </li>
+                                    <li class="links__item">
+                                        <a href="#" class="links__link"><span class="_icon-sms"></span>dodaj opinię</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__tabs product-tabs">
+                    <div class="product-tabs__btns product-tabs-btns">
+                        <div class="product-tabs-btns__item tabs-btn active" data-tab-body="1">
+                            <h2>
+                                Opis
+                            </h2>
+                        </div>
+                        <div class="product-tabs-btns__item tabs-btn" tabs-btn data-tab-body="2">
+                            <h2>
+                                Opinie o produkcie (<span>20</span>)
+                            </h2>
+                        </div>
+                        <div class="product-tabs-btns__item tabs-btn" data-tab-body="3">
+                            <h2>
+                                DOSTAWA
+                            </h2>
+                        </div>
+                        <div class="product-tabs-btns__item tabs-btn" data-tab-body="4">
+                            <h2>PAKOWANIE</h2>
+                        </div>
+                    </div>
+
+                    <div class="product-tabs__body tabs-body tabs-body-1 active">
+                        <div class="tabs-body-1__wrapper">
+                            <div class="tabs-body-1__item tabs-body-1-item">
+                                <div class="tabs-body-1-item__column column-img">
+                                    <img src="./imgs/img_mis1.jpg" alt="img_mis1">
+                                </div>
+                                <div class="tabs-body-1-item__column">
+                                    <h2>BEZPIECZNE, NATURALNE, RÓŻOWE SZUMY</h2>
+                                    <p>Dźwięki szumiącego przyjaciela MOONIE, to <b>prawdziwe nagrania naturalnych różowych szumów<b>, a nie szumy generowane komputerowo.</p>
+                                    <p>Dzięki temu, że szum bicia serca, jest prawdziwym nagraniem z wnętrza brzucha mamy, dziecko może uspokoić się i poczuć bezpiecznie, przy dobrze już znanym dźwięku. Szum fal morskich został nagrany nad Bałtykiem, a dźwięki leśnego strumienia w Tarach.</p>
+                                    <p>Szumy misia MOONIE, <strong>wygłuszają dźwięki z otoczenia</strong>, dzięki czemu, codzienne, domowe hałasy nie wybudzają maluszka ze snu.</p>
+                                    <p>Szumiący przyjaciel MOONIE posiada moduł z możliwością <strong>regulacji głośności</strong>, można więc dobrać odpowiedni poziom głośności do warunków i potrzeb dziecka.</p>
+                                    <p>Szumiący miś MOONIE ma także <strong>kołysankę</strong>, która usypia maluszki dźwiękami kalimby.</p>
+                                </div>
+                            </div>
+
+                            <div class="tabs-body-1__item tabs-body-1-item">
+                                <div class="tabs-body-1-item__column">
+                                    <h2>DLACZEGO RÓŻOWE SZUMY?</h2>
+                                    <p>Dzieci, będąc jeszcze w brzuchu mamy, otoczone są dźwiękami o niskich częstotliwościach, dlatego dźwięki misia MOONIE, <strong>to bezpieczne naturalne różowe szumy, w których dominują dźwięki o niskich częstotliwościach</strong>.</p>
+                                    <p>W różowym szumie moc akustyczna wysokich częstotliwość opada, dzięki czemu dźwięki o wysokich częstotliwościach są na bezpiecznym poziomie dla maluszków, a dla dorosłego są prawie niesłyszalne.</p>
+                                    <p>W białym szumie moc akustyczna dla wszystkich częstotliwości pozostaje na niezmiennym poziomie (pozioma linia na wykresie). W rzeczywistości oznacza to, że dźwięki o wyższych częstotliwościach, przy tym samym poziomie mocy, są bardziej słyszalne niż dźwięki o niższych częstotliwościach.</p>
+                                    
+                                </div>
+                                <div class="tabs-body-1-item__column column-img  order">
+                                    <img src="./imgs/img_mis2.jpg" alt="img_mis2">
+                                </div>
+                            </div>
+
+                            <div class="tabs-body-1__item tabs-body-1-item">
+                                <div class="tabs-body-1-item__column column-img">
+                                    <img src="./imgs/img_mis3.jpg" alt="img_mis3">
+                                </div>
+                                <div class="tabs-body-1-item__column">
+                                    <h2>DLACZEGO RÓŻOWE SZUMY?</h2>
+                                    <p>Dzieci, będąc jeszcze w brzuchu mamy, otoczone są dźwiękami o niskich częstotliwościach, dlatego dźwięki misia MOONIE, <strong>to bezpieczne naturalne różowe szumy, w których dominują dźwięki o niskich częstotliwościach</strong>.</p>
+                                    <p>W różowym szumie moc akustyczna wysokich częstotliwość opada, dzięki czemu dźwięki o wysokich częstotliwościach są na bezpiecznym poziomie dla maluszków, a dla dorosłego są prawie niesłyszalne.</p>
+                                    <p>W białym szumie moc akustyczna dla wszystkich częstotliwości pozostaje na niezmiennym poziomie (pozioma linia na wykresie). W rzeczywistości oznacza to, że dźwięki o wyższych częstotliwościach, przy tym samym poziomie mocy, są bardziej słyszalne niż dźwięki o niższych częstotliwościach.</p>
+                                </div>
+                            </div>
+
+                            <div class="tabs-body-1__item tabs-body-1-item">
+                                <div class="tabs-body-1-item__column">
+                                    <h2>SZUMIĄCY MIŚ Z LAMPKĄ NOCNĄ</h2>
+                                    <p>Każdy szumiący miś MOONIE jest też lampką nocną, która może świecić na 7 różnych odcieni.</p>
+                                    <p>Delikatne światło pozwala <strong>na nakarmienie i przewinięcie dziecka, bez zapalania górnego światła</strong>. Kiedy dziecko zaczyna płakać, lampka włącza się wraz z szumem, oświetla i uspakaja maluszka.</p>
+                                    <p><strong>Lampka LED nie nagrzewa się</strong>, jest w pełni bezpieczna. Lampka szumiącego misia MOONIE, świetnie sprawdza się też przy starszych dzieciach, które często mają lęki nocne i boją się ciemności. Można wtedy <strong>włączyć samą lampkę bez dźwięku</strong> i zostawić ją zapaloną na całą noc.</p>
+                                    
+                                </div>
+                                <div class="tabs-body-1-item__column column-img  order">
+                                    <img src="./imgs/img_mis4.jpg" alt="img_mis4">
+                                </div>
+                            </div>
+
+                            <div class="tabs-body-1__item tabs-body-1-item">
+                                <div class="tabs-body-1-item__column column-img">
+                                    <img src="./imgs/img_mis5.jpg" alt="img_mis5">
+                                </div>
+                                <div class="tabs-body-1-item__column">
+                                    <h2>NIEZAWODNY, INTELIGENTNY CZUJNIK PŁACZU</h2>
+                                    <p>Szumiący miś MOONIE posiada <strong>inteligentny czujnik płaczu</strong>, stworzony z myślą o sytuacjach, w których dzidziuś nagle budzi się ze snu.</p>
+                                    <p>Włączona funkcja inteligentnego czujnika płaczu czuwa nad spokojnym snem maluszka. Gdy tylko dziecko przebudzi się i zacznie płakać, <strong>szumiący miś MOONIE uruchamia bezpieczny, naturalny różowy szum</strong> i wycisza maleństwo.</p>
+                                    <p>Szumiący miś MOONIE zawsze wycisza się po 30 minutach i automatycznie przechodzi 3 godzinny w tryb czuwania. Płacz dziecka uruchamia ostatnio wybrany szum na kolejne 30 minut, następnie, cykl powtarza się.</p>
+                                    <p><strong>Inteligentny czujnik płaczu</strong> zapamiętuje ostatnie ustawienie szumu i światła. Można więc tak zaprogramować szumiącego misia MOONIE aby po ponownym uruchomieniu odtworzył ulubione ustawienia lampki i dźwięku lub samego dźwięku.</p>
+                                    <p>Inteligentny czujnik płaczu można również uruchomić bez włączania szumów. Szumiący miś MOONIE położony przy dziecku, z uruchomionym inteligentnym czujnikiem płaczu, daje pewność, że podczas najbliższych 3 godzin snu maluszka, czujnik płaczu będzie czuwał i zareaguje, na jego płacz.</p>
+                                </div>
+                            </div>
+
+                            <div class="tabs-body-1__item tabs-body-1-item">
+                                <div class="tabs-body-1-item__column">
+                                    <h2>WYGODNE I EKOLOGICZNE ŁADOWANIE PRZEZ USB</h2>
+                                    <p> szumiącym misiem MOONIE nie trzeba wstawać o 3 rano, żeby wymienić baterie. <strong>Nasz moduł ładowany jest przez USB. Wygodnie, oszczędnie, ekologicznie</strong>.</p>
+                                    <p>MOONIE jest jedyną szumiącą zabawką, która nie wymaga zakupu baterii i od nowości ma już naładowany moduł. Można z niego korzystać od razu po rozpakowaniu. Projektując szumiącego misia MOONIE chcieliśmy, żeby zabawka była przyjazna środowisku i nie zmuszała do kupowania wciąż nowych baterii.</p>
+                                    <p>Moduł szumiącego misia MOONIE do pełnego naładowania potrzebuje 3 godzin. W pełni naładowana bateria wystarcza na ok 8 godzin ciągłej pracy przy włączonym świetle i dźwięku. Do szumiącego misia MOONIE dołączony jest kabelek USB.</p>
+                                    
+                                </div>
+                                <div class="tabs-body-1-item__column column-img  order">
+                                    <img src="./imgs/img_mis6.jpg" alt="img_mis6">
+                                </div>
+                            </div>
+
+                            <div class="tabs-body-1__item tabs-body-1-item">
+                                <div class="tabs-body-1-item__column column-img">
+                                    <img src="./imgs/img_mis7.jpg" alt="img_mis7">
+                                </div>
+                                <div class="tabs-body-1-item__column">
+                                    <h2>PRODUKT POLSKI, DOBRY DESIGN</h2>
+                                    <p>MOONIE nie jest produktem masowym. Najwyższa jakość i bezpieczeństwo są dla nas najważniejsze, dlatego skupiamy się na produkcji w Polsce.</p>
+                                    <p>Wszystkie zabawki MOONIE szyjemy w naszej własnej pracowni.</p>
+                                    <p>Ideą wzornictwa MOONIE jest prostota i elegancja. Wierzymy, że dzieci które otaczamy dobrze zaprojektowanymi rzeczami, wyrabiają w sobie poczucie estetyki i wrażliwość na piękno.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="product-tabs__body tabs-body tabs-body-2 comments">
+                        <div class="comments__wrapper">
+                            <div class="comments__item">
+                                <div class="comment__photo">
+                                    <!-- <img src="" alt=""> -->
+                                    <span class="_icon-user-comment"></span>
+                                </div> 
+                                <h5 class="comment__name">Mateusz</h5>
+                                <div class="comment__date">4 lipca 2021</div>
+                                <div class="comment__description">
+                                    <p>Czujnik płaczu działa bez zastrzeżeń. Polecam.</p>
+                                </div>
+                            </div>
+                            <div class="comments__item background">
+                                <div class="comment__photo">
+                                    <!-- <img src="" alt=""> -->
+                                    <span class="_icon-user-comment"></span>
+                                </div> 
+                                <h5 class="comment__name">Mateusz</h5>
+                                <div class="comment__date">4 lipca 2021</div>
+                                <div class="comment__description">
+                                    <p>Czujnik płaczu działa bez zastrzeżeń. Polecam.</p>
+                                </div>
+                            </div>
+                            <div class="comments__item">
+                                <div class="comment__photo">
+                                    <!-- <img src="" alt=""> -->
+                                    <span class="_icon-user-comment"></span>
+                                </div> 
+                                <h5 class="comment__name">Mateusz</h5>
+                                <div class="comment__date">4 lipca 2021</div>
+                                <div class="comment__description">
+                                    <p>Czujnik płaczu działa bez zastrzeżeń. Polecam.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="comments__block-form comments-form">
+                            <form action="#" class="comments-form__form">
+                                <div class="comments-form__item form-item">
+                                    <label for="comments-form-name">Imię lub pseudonim:</label>
+                                    <input class="input" type="text" id="comments-form" name="name">
+                                    <div class="comments-form__message message">
+                                        <p>
+                                            To pole jest wymagane
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="comments-form__item form-item">
+                                    <label for="comments-form-text">Twoja opinia:</label>
+                                    <textarea class="input" name="" id="comments-form-text" cols="30" rows="10"></textarea>
+                                    <div class="comments-form__message message">
+                                        <p>
+                                            To pole jest wymagane
+                                        </p>
+                                    </div>
+                                </div>
+                                <button type="submit" class="comments-form__btn">Wyślij</button>
+                            </form>
+                        </div>
+                        
+                    </div>
+                    <div class="product-tabs__body tabs-body tabs-body-3 delivery">
+                        <p>dostawa... edycja w module </p>
+                    </div>
+                    <div class="product-tabs__body tabs-body tabs-body-4 packing">
+                        <div class="packing__wrapper">
+                            <div class="packing__big-img">
+                                <img src="./imgs/20201206_Moonie_swieta_9656.jpg" alt="20201206_Moonie_swieta_9656">
+                            </div>
+                            <div class="packing__detalies packing-detalies">
+                                <h2 class="packing-detalies__name">PAKOWANIE NA PREZENT EKO</h2>
+                                <div class="packing-detalies__prices">
+                                    <span>Cena:</span>
+                                    <div class="price">
+                                        9,90&nbsp;zł
+                                    </div>
+
+                                    <form action="#" class="packing-detalies__form packing-detalies-form">
+                                        <div class="packing-detalies-form__item">
+                                            <input type="text" value="1">
+                                            <span>szt.</span>
+                                        </div>
+                                        <div class="packing-detalies-form__btn">
+                                            <button class="btn-popup" data-id="box-products-modal-two" type="submit">Do koszyka <span class="_icon-arrow-up-left2"></span></button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="packing-detalies__desc">
+                                    <p>MOONIE na prezent. </p>
+                                    <p>Oryginalne opakowanie MOONIE pakujemy w elegancki papier z logotypem. Do zestawu dołączona jest karteczka na której ręcznie wpisujemy dedykację.</p>
+                                    <p>Treść dedykacji proszę podać w komentarzu do zamówienia.</p>
+                                    <p>Paczka wysyłana jest bez rachunku.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal box-products__modal box-products-modal-two" id="box-products-modal-two">
+            <div class="box-products-modal-two__popap">
+                <div class="box-products-modal-two__header">
+                    <h2 class="box-products-modal-two__title">Pomyślnie dodano do koszyka:</h2>
+                    <div class="box-products-modal-two__close">
+                        <span class="_icon-close"></span>
+                    </div>
+                </div>
+
+                <div class="box-products-modal-two__body box-products-modal-two-body">
+                    <div class="box-products-modal-two-body__block-img">
+                        <img src="./imgs/product/20201119_Moonie_6730.jpg" alt="CAPPUCCINO - SZUMIĄCY MIŚ ORGANIC Z LAMPKĄ">
+                    </div>
+
+                    <div class="box-products-modal-two-body__info info">
+                        <h3 class="info__name">CAPPUCCINO - SZUMIĄCY MIŚ ORGANIC Z LAMPKĄ</h3>
+                        <div class="info__item">
+                            Ilość: <span>1</span>
+                        </div>
+                        <div class="info__item">
+                            Cena brutto:
+                            <span>229,00&nbsp;zł</span>
+                        </div>
+                    </div>
+
+                    <div class="box-products-modal-two-body__subinfo subinfo">
+                        <div class="subinfo__item">
+                            Ilość produktów w koszyku: <span>1</span>
+                        </div>
+                        <div class="subinfo__item">
+                            Wartość koszyka: <span>229,00&nbsp;zł</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-products-modal-two__footer">
+                    <a href="#" class="box-products-modal-two__btn rigth">Kontynuuj zakupy</a>
+                    <a href="#" class="box-products-modal-two__btn left">Złóż zamówienie</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product__popup-bootom product-popup-bootom">
+            <div class="product-popup-bootom__item">
+                <div class="product-popup-bootom__photo">
+                    <img src="./imgs/product-min-slider/20201119_Moonie_6730.jpg" alt="">
+                </div>
+                <h5 class="product-popup-bootom__name">
+                    CAPPUCCINO - SZUMIĄCY MIŚ ORGANIC Z LAMPKĄ
+                </h5>
+            </div>
+
+            <div class="product-popup-bootom__item">
+                <input type="text" value="1">
+                <button class="btn-popup" data-id="box-products-modal-two">Dodaj do koszyka</button>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+            <div class="footer__inner footer-inner">
+                <div class="footer-inner__container _container">
+                    <div class="footer-inner__item accordion">
+                        <div class="accordion__header">WAŻNE LINKI <span>&#10094;</span></div>
+                        <div class="accordion__body">
+                            <a href="/strona/instrukcje" title="INSTRUKCJE MOONIE">
+                                INSTRUKCJE MOONIE
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-inner__item accordion">
+                        <div class="accordion__header">Informacje <span>&#10094;</span></div>
+                        <div class="accordion__body">
+                            <a href="/strona/www-moonie-shoplo-com-dostawa" title="METODY DOSTAWY I PŁATNOŚCI">
+                                METODY DOSTAWY I PŁATNOŚCI
+                            </a>
+                            <a href="/regulaminy" title="Regulaminy">
+                                Regulaminy
+                            </a>
+                            <a href="/politykaprywatnosci" title="Polityka prywatności">
+                                Polityka prywatności
+                            </a>
+                            <a href="/zwroty-i-reklamacje" title="Zwroty i reklamacje">
+                                Zwroty i reklamacje
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-inner__item accordion">
+                        <div class="accordion__header">NASZE PRODUKTY <span>&#10094;</span></div>
+                        <div class="accordion__body">
+                            <a href="/kategoria/szumiace-kroliczki-z-lampka" title="SZUMIĄCY KRÓLICZEK Z LAMPKĄ">
+                        SZUMIĄCY KRÓLICZEK Z LAMPKĄ
+                            </a>
+                            <a href="/kategoria/moonie-mini" title="KRÓLICZKI SENSORYCZNE">
+                                KRÓLICZKI SENSORYCZNE
+                            </a>
+                            <a href="/kategoria/lniane-uspokajacze" title="LNIANE PRZYTULANKI">
+                                LNIANE PRZYTULANKI
+                            </a>
+                            <a href="/kategoria/zestawy" title="ZESTAWY">
+                                ZESTAWY
+                            </a>
+                            <a href="/kategoria/na-prezent" title="NA PREZENT">
+                                NA PREZENT
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="footer__user footer-user">
+                <div class="footer-user__container _container">
+                    <div class="footer-user__item logo">
+                        <a href="./index.html">
+                            <img src="./imgs/svg/logo.svg" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="footer-user__item moonie">
+                        <a href="mailto:hello@moonie.pl">HELLO@MOONIE.PL</a>
+                    </div>
+                    <div class="footer-user__item social">
+                        <ul class="social__list">
+                            <li class="social__item">
+                                <a href="https://www.facebook.com/moonie.friend" class="social__link">
+                                    <span class="_icon-facebook"></span>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="https://www.instagram.com/moonie_friend/" class="social__link">
+                                    <span class="_icon-instagram"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer__full-version full-version">
+                <span>
+                    Pokaż pełną wersję strony
+                </span>
+            </div>
+    
+            <div class="footer__bottom footer-bottom">
+                <div class="footer-bottom__container _container">
+                    <a href="https://www.kifa.ws/">Kifa</a>
+                </div>
+            </div>
+    
+            <div class="footer__btn-start">
+                <button>&#10094;</button>
+            </div>
+    </footer>
+
+    <script src="./js/lightgallery.min.js"></script>
+    <script src="./js/lg-zoom.umd.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/plugins/hash/lg-hash.min.js" integrity="sha512-O9yckC4F8C5Q6+OBzCbxKDz9QbzERrhrx99hucPAIm0rbGsxeJNXZeQC0b8fm4P+m8tVyVoDiL3EpNaswUUcSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

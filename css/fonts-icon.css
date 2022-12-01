@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'icons';
+  src: url("../fonts/icons.eot?amvvuc");
+  src: url("../fonts/icons.eot?amvvuc#iefix") format("embedded-opentype"), url("../fonts/icons.ttf?amvvuc") format("truetype"), url("../fonts/icons.woff?amvvuc") format("woff"), url("../fonts/icons.svg?amvvuc#icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="_icon-"]::before, [class*=" _icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-user-comment:before {
+  content: "\e911";
+}
+
+._icon-close:before {
+  content: "\e910";
+}
+
+._icon-hamburger:before {
+  content: "\e90f";
+}
+
+._icon-arrow:before {
+  content: "\e900";
+}
+
+._icon-arrow-right:before {
+  content: "\e901";
+}
+
+._icon-cart:before {
+  content: "\e903";
+}
+
+._icon-eye:before {
+  content: "\e904";
+}
+
+._icon-facebook:before {
+  content: "\e905";
+}
+
+._icon-filled-message:before {
+  content: "\e906";
+}
+
+._icon-instagram:before {
+  content: "\e907";
+}
+
+._icon-like:before {
+  content: "\e908";
+}
+
+._icon-like-transparent:before {
+  content: "\e909";
+}
+
+._icon-loupe:before {
+  content: "\e90a";
+}
+
+._icon-sms:before {
+  content: "\e90b";
+}
+
+._icon-star0:before {
+  content: "\e90c";
+}
+
+._icon-star1:before {
+  content: "\e90d";
+}
+
+._icon-user:before {
+  content: "\e90e";
+}
+
+._icon-btn-slider:before {
+  content: "\e902";
+}
+
+._icon-arrow-up-left2:before {
+  content: "\ea39";
+}
+/*# sourceMappingURL=fonts-icon.css.map */

@@ -1,0 +1,59 @@
+.benefits {
+
+    &__container {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    & .tabs-body-1__item {
+        max-width: 1030px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    // .benefits__music
+
+    .benefits-music {
+        background-color: #f7f0ec;
+        padding: 40px 0;
+
+        // .benefits-music__title
+    
+        &__title {
+            font-size: 19px;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 0 15px;
+        }
+    
+        // .benefits-music__wrapper
+    
+        &__wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1030px;
+            margin: 0 auto;
+        }
+    
+        // .benefits-music__item
+    
+        &__item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 33.333%;
+            padding: 0.625rem;
+            cursor: pointer;
+
+            @media screen and (max-width: 767.98px) {
+                width: 50%;
+            }
+
+            & span {
+                display: block;
+            }
+        }
+    }
+}
+

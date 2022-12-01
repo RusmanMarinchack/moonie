@@ -1,0 +1,145 @@
+.basket-step3 {
+
+    // .basket-step3__container
+
+    &__container {
+    }
+
+    // .basket-step3__wrapper
+
+    &__wrapper {
+        margin-bottom: 20px;
+        & .basket-step3__order-block {
+            margin-bottom: 30px;
+        }
+    }
+
+    & .basket-step3-delivery {
+        display: flex;
+
+        @media screen and (max-width: 767.98px) {
+            flex-direction: column;
+        }
+
+        & a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        // .basket-step3-delivery__item
+    
+        &__item {
+            width: 28%;
+
+            @media screen and (max-width: 767.98px) {
+                width: 100%;
+                border-bottom: 1px solid #d8d8d8;
+                padding-bottom: 1em;
+                margin-bottom: 0.5em;
+            }
+
+            & a {
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            
+            &:not(:last-child) {
+                margin-right: 2%;
+                border-right: 1px solid #d8d8d8;
+
+                @media screen and (max-width: 767.98px) {
+                    border-right: none;
+                }
+            }
+
+            & h4 {
+                font-size: 20px;
+                font-weight: 500;
+                margin-bottom: 0.8em;
+            }
+        
+            & p {
+                margin: 0;
+                margin-bottom: 3px;
+            }
+        }
+    }
+
+    // .basket-step3__delivery
+
+    & .detalies {
+    }
+    & .binvoice {
+    }
+    & .information {
+        & ul {
+            list-style: none;
+
+            & li {
+                margin-bottom: 3px;
+            }
+
+        }
+    }
+    & .shipping {
+        margin-top: 1.5em;
+        text-align: end;
+    
+        // .shipping__label
+    
+        &__label {
+        }
+    
+        // .shipping__value
+    
+        &__value {
+        }
+    }
+    & .prices {
+        margin-top: 10px;
+        font-size: 1.4em;
+        text-align: end;
+    
+        // .prices__label
+    
+        &__label {
+        }
+    
+        // .prices__value
+    
+        &__value {
+            font-size: 28px;
+            font-weight: bold;
+            padding: 0.25em 0em 0.25em 0.5em;
+        }
+    }
+    & .btns {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1em;
+
+        & a {
+            display: inline-block;
+            padding: 0.35em 0.85em;
+            text-decoration: none;
+            font-size: 12px;
+            border-radius: 2px;
+        }
+
+        // .btns__one
+    
+        &__one {
+        }
+    
+        // .btns__two
+    
+        &__two {
+        }
+    }
+}
+
+
+
