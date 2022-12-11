@@ -19,17 +19,36 @@
     }
 
     & .box-products {
+        margin-left: 20px;
+
+        @media screen and (max-width: 767.98px) {
+            margin-left: 0px;
+        }
+
         &__title {
             font-size: 26px;
             text-align: start;
             margin: 0;
-            margin-bottom: 2em;
+            margin-bottom: 1em;
+        }
+
+        &-wrapper__block-img {
+            height: 365px;
+
+            @media screen and (max-width: 991.98px) {
+                height: auto;
+            }
+        }
+
+        &-wrapper__item {
+            height: auto;
         }
     }
 
     // .store__category
 
     & .category {
+        width: 280px;
 
         @media screen and (max-width: 767.98px) {
             display: none;

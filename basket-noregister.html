@@ -80,6 +80,7 @@
                                         <input class="input" type="number" id="input_phone">
                                         <span class="message">Pole wymagane</span>
                                     </div>
+  
                                 </div>
                             </div>
     
@@ -137,33 +138,31 @@
     
                                 <div class="basket-register-form-wrapper__inner active-form" id="active-form-2">
                                     <div class="basket-register-form-wrapper__item">
-                                        <div class="basket-register-form-wrapper__item">
-                                            <label for="other_address">Ulica i nr domu:</label>
-                                            <input class="input" type="text" name="other_address" id="other_address">
-                                            <span class="message">
-                                                <span>Pole wymagane</span>
-                                                <span>Uzupełnij numer budynku</span>
-                                            </span>
-                                        </div>
-                                        <div class="basket-register-form-wrapper__item">
-                                            <label for="input_zip">Kod pocztowy:</label>
-                                            <input class="input" type="text" name="other_address" id="input_zip">
-                                            <span class="message">
-                                                Pole wymagane
-                                            </span>
-                                        </div>
-                                        <div class="basket-register-form-wrapper__item">
-                                            <label for="input_city">Miasto:</label>
-                                            <input class="input" type="text" name="city" id="input_city">
-                                            <span class="message">
-                                                Pole wymagane
-                                            </span>
-                                        </div>
+                                        <label for="other_address">Ulica i nr domu:</label>
+                                        <input class="input" type="text" name="other_address" id="other_address">
+                                        <span class="message">
+                                            <span>Pole wymagane</span>
+                                            <span>Uzupełnij numer budynku</span>
+                                        </span>
+                                    </div>
+                                    <div class="basket-register-form-wrapper__item">
+                                        <label for="input_zip">Kod pocztowy:</label>
+                                        <input class="input" type="text" name="other_address" id="input_zip">
+                                        <span class="message">
+                                            Pole wymagane
+                                        </span>
+                                    </div>
+                                    <div class="basket-register-form-wrapper__item">
+                                        <label for="input_city">Miasto:</label>
+                                        <input class="input" type="text" name="city" id="input_city">
+                                        <span class="message">
+                                            Pole wymagane
+                                        </span>
                                     </div>
                                 </div>
     
-                                <div class="basket-register-form-wrapper__inner">
-                                    <label for="">Kraj:</label>
+                                <div class="basket-register-form-wrapper__item select">
+                                    <label for="input_country">Kraj:</label>
                                     <select class="basket-register-form-wrapper__country-for-phone" name="country" id="input_country">
                                         <option value="3" data-region="0">Afganistan</option>
                                         <option value="6" data-region="0">Albania</option>
@@ -476,7 +475,8 @@
                                     <label for="comment">Uwagi</label>
                                     <textarea name="comment" id="comment"></textarea>
                                 </div>
-                                <div class="basket-register-form-wrapper__item input-chackbox">
+
+                                <div class="basket-register-form-wrapper__inner input-chackbox">
                                     <input type="checkbox" name="additional_3" id="additional_3">
                                     <label for="additional_3">Wyrażam zgodę na przetwarzanie przez moonie moich danych osobowych w celach marketingowych.</label>
                                 </div>

@@ -23,6 +23,7 @@
 
         @media screen and (max-width: 991.98px) {
             grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            grid-gap: 10px;
         }
 
         // .box-products-wrapper__item
@@ -46,6 +47,15 @@
         // .box-products-wrapper__block-img
     
         &__block-img {
+            height: 315px;
+            // width: 320px;
+            display: inline-block;
+
+
+            @media screen and (max-width: 991.98px) {
+                height: auto;
+            }
+
             & img {
                 width: 100%;
                 display: block;

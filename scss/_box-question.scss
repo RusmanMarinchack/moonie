@@ -31,6 +31,20 @@
             padding: 0.625rem 0;
             cursor: pointer;
 
+            &::before {
+                content: '';
+                display: block;
+                width: 13px;
+                height: 7px;
+                background-image: url('../imgs/ico_arrow_down_small.png');
+                background-size: cover;
+                order: 1;
+            }
+
+            h3 {
+                margin: 0;
+            }
+
             & span {
                 font-size: 30px;
             }
@@ -43,12 +57,15 @@
             overflow-y: hidden;
             transition: all 0.4s;
 
-            & p a {
-                color: #000;
-                text-decoration: none;
-
-                &:hover {
-                    text-decoration: underline;
+            & p {
+                line-height: 25px;
+                & a {
+                    color: #000;
+                    text-decoration: none;
+    
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
             }
         }

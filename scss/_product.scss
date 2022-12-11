@@ -247,6 +247,8 @@
 		// .product-info__detalis
 
 		.product-info-detalis {
+            display: flex;
+            flex-wrap: wrap;
             background-color: #f2f2f2;
             border: 0;
             padding: 1em;
@@ -261,6 +263,7 @@
             // .product-info-detalis__inner
     
             &__inner {
+                width: 16em;
 
                 @media screen and (max-width: 767.98px) {
                     margin-right: 3em;
@@ -348,6 +351,15 @@
                 &__link {
                     color: #000;
                     text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+
+                    &.btn-popup {
+                        border: none;
+                        padding: 0;
+                    }
 
                     & span {
                         padding: 0 0.5em;
@@ -691,7 +703,7 @@
     background: #fff;
     padding: 30px 20px;
     box-shadow: 2px 2px 8px #dedede;
-    z-index: 18;
+    z-index: 9;
     transition: all 0.3s;
     opacity: 0;
     visibility: hidden;
@@ -738,6 +750,151 @@
         text-transform: uppercase;
     }
 }
+
+
+.modal-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: radial-gradient(ellipse farthest-corner at center center, rgba(127, 127, 127, 0.5), rgba(127, 127, 127, 0.5) 35%, rgba(0, 0, 0, 0.7) 100%);
+    z-index: 20;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+
+        & .modal-form__popap {
+            right: 0;
+        }
+    }
+
+        // .modal-form__popap
+
+        &__popap {
+            max-width: 375px;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            right: -150%;
+            top: 0;
+            padding: 0 20px 20px;
+            background: #fff;
+            overflow: auto;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+
+        // .modal-form__header
+
+        &__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        // .modal-form__title
+
+        &__title {
+            font-size: 16px;
+            letter-spacing: 4px;
+            line-height: 0.94;
+            text-transform: uppercase;
+        }
+
+        // .modal-form__close
+
+        &__close {
+        }
+
+        // .modal-form__body
+
+        &__body {
+        }
+
+        // .modal-form__form
+
+        .form-modal {
+
+            // .form-modal__item
+    
+            &__item {
+                margin-bottom: 5px;
+                & label {
+                    font-weight: normal;
+                    color: rgb(144, 144, 144);
+                    cursor: pointer;
+                }
+
+                & .input {
+                    border: 1px solid #f4f4f4;
+                    color: #000;
+                    font-size: 14px;
+                    padding: 13px 30px;
+                    line-height: 1;
+                    width: 100%;
+                    height: auto;
+                    border-radius: 2px;
+                    outline: none;
+                    transition: all 0.3s; 
+
+                    &.error {
+                        border-color: red;
+                    }
+
+                    &:focus {
+                        border-color: #000;
+                    }
+                }
+
+                & span {
+                    display: none;
+                    color: red;
+
+                    &.error {
+                        display: inline-block;
+                    }
+                }
+            }
+    
+            // .form-modal__label
+    
+            &__label {
+            }
+    
+            // .form-modal__mandatory
+    
+            &__mandatory {
+            }
+    
+            // .form-modal__submit
+    
+            &__submit {
+                display: inline-block;
+                padding: 0.35em 0.85em;
+                margin: 0;
+                line-height: 1.35;
+                font-size: 14px;
+                margin-top: 5px;
+                border: none;
+                border-radius: 2px;
+                background: #000;
+                color: #fff;
+            }
+    }
+}
+
+
+
+
+
+
 
 .tabs-body-1__wrapper {
     & .tabs-body-1-item {

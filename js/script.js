@@ -124,32 +124,72 @@ languageActive();
 // Додаємо всім попапам на сайті класс .active.
 function addClassPopup() {
     let popupBtns = document.querySelectorAll('.btn-popup');
+    let formPopupBtns = document.querySelectorAll('form');
+
+
+    if(formPopupBtns.length) {
+        formPopupBtns.forEach(form => {
+            form.addEventListener('submit', function(e) {
+                let btn = form.querySelector('.btn-popup');
+                
+                if(btn) {
+                    if (btn.getAttribute('data-id') !== undefined) {
+                        e.preventDefault();
+                    };
+                }
+
+                
+            });
+        });
+    };
+
+
 
     if(popupBtns.length) {
+
         popupBtns.forEach(btn => {
+
             btn.addEventListener('click', function(e) {
-                e.preventDefault()
-                if (e.target.classList[0] === 'bsket-mob') {
-                    if (!matchMedia('(max-width: 767.98px)').matches) {
-                        e.preventDefault()
-                    };
-                };
 
-                let dataId = this.dataset.id;
-                console.log(dataId)
-                let popup = document.querySelector(`#${dataId}`);
+                // let btnXhttp = document.querySelectorAll('.xttp-popup');
+                // console.log(btnXhttp)
 
-                if(popup) {
-                    popup.classList.add('active');
-                    document.body.classList.add('look');
+                // let xhttp = new XMLHttpRequest();
+                // let url = '';
+                // // https://jsonplaceholder.typicode.com/posts/1
 
+                //     xhttp.addEventListener('readystatechange', function() {
+                //         if(this.readyState == 4 || this.status == 200) {
+
+                //             if(btn.classList.contains('xhttp-popup') && url !== '') {
+                //                 openPopup()
+                //             } else {
+                //                 openPopup()
+                //             }         
+                //         } 
+                //     })
+                
+                //     xhttp.open('get', url);
+                //     xhttp.send()
+
+
+                // function openPopup() {
+                    let dataId = btn.dataset.id;
+                    let popup = document.querySelector(`#${dataId}`);
+    
+                    if(popup) {
+                        popup.classList.add('active');
+                        document.body.classList.add('look');
+        
                     document.addEventListener('click', function(e) {
                         if(e.target.classList[0] === 'modal' || e.target.classList[0] === '_icon-close') {
                             popup.classList.remove('active');
                             document.body.classList.remove('look');
-                        };
-                    });
-                };
+                            };
+                        });
+                    };
+                // }
+
             });
         });
     };
@@ -572,27 +612,6 @@ function addClassActivePopapBottom() {
 };
 
 addClassActivePopapBottom();
-
-// Виводимо в корзині поле для ведення промокоду.
-function addPromocod() {
-    let checkbox = document.querySelector('.summary__promocode #promocode');
-    let promocodeWrapper = document.querySelector('.promocode__inner');
-
-    console.log(checkbox)
-    if (checkbox) {
-        checkbox.addEventListener('change', function(e) {
-            if (promocodeWrapper) {
-                if (this.checked) {
-                    promocodeWrapper.classList.add('active');
-                } else {
-                    promocodeWrapper.classList.remove('active');
-                };
-            };
-        });
-    };
-};
-
-// addPromocod()
 
 
 // При активному інпут радіо, робимо активний блок з інпутами на сторінці 'register'.

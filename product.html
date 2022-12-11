@@ -25,9 +25,13 @@
 
             <div class="header__language language mob sublist">
                 <span class="language__active">PL <span>&#8249;</span></span>
-                <div class="language__list">
+                <ul class="language__list">
                     <li class="language__item"><a href="#" class="language__link">PL</a></li>
-                </div>
+                    <li class="language__item"><a href="#" class="language__link">PL</a></li>
+                    <li class="language__item"><a href="#" class="language__link">PL</a></li>
+                    <li class="language__item"><a href="#" class="language__link">PL</a></li>
+                    
+                </ul>
             </div>
 
             <div class="header__inner">
@@ -62,9 +66,12 @@
 
                 <div class="header__language language sublist">
                     <span class="language__active">PL <span>&#8249;</span></span>
-                    <div class="language__list">
+                    <ul class="language__list">
                         <li class="language__item"><a href="#" class="language__link">PL</a></li>
-                    </div>
+                        <li class="language__item"><a href="#" class="language__link">PL</a></li>
+
+
+                    </ul>
                 </div>
 
                 <div class="header__icons icons">
@@ -233,7 +240,7 @@
     
                             <form action="#" class="product-info-basket__form form">
                                 <div class="form__length">
-                                    <input type="text" value="1">
+                                    <input type="number" value="1">
                                     <span>szt.</span>
                                 </div>
     
@@ -280,10 +287,10 @@
                             <div class="product-info-detalis__links links">
                                 <ul class="links__list">
                                     <li class="links__item">
-                                        <a href="#" class="links__link"><span class="_icon-filled-message"></span>zapytaj o produkt</a>
+                                        <button class="links__link btn-popup xhttp-popup" data-id="modal-form"><span class="_icon-filled-message"></span>zapytaj o produkt</button>
                                     </li>
                                     <li class="links__item">
-                                        <a href="#" class="links__link"><span class="_icon-like"></span>poleć znajomemu</a>
+                                        <a href="#" class="links__link "><span class="_icon-like"></span>poleć znajomemu</a>
                                     </li>
                                     <li class="links__item">
                                         <a href="#" class="links__link"><span class="_icon-sms"></span>dodaj opinię</a>
@@ -491,7 +498,7 @@
 
                                     <form action="#" class="packing-detalies__form packing-detalies-form">
                                         <div class="packing-detalies-form__item">
-                                            <input type="text" value="1">
+                                            <input type="number" value="1">
                                             <span>szt.</span>
                                         </div>
                                         <div class="packing-detalies-form__btn">
@@ -554,6 +561,49 @@
             </div>
         </div>
 
+        <div class="modal box-product__modal-form modal-form" id="modal-form">
+            <div class="modal-form__popap">
+                <div class="modal-form__header">
+                    <h2 class="modal-form__title">zapytaj o produkt:</h2>
+                    <div class="modal-form__close">
+                        <span class="_icon-close"></span>
+                    </div>
+                </div>
+                <div class="modal-form__body">
+                    <form action="#" class="modal-form__form form-modal">
+                        <div class="form-modal__item">
+                            <label for="question_name">
+                                Twoje imię:
+                            </label>
+                            <input type="text" name="name" id="question_name" size="40" class="input">
+                            <span class="message">Pole wymagane</span>
+                        </div>
+                        <div class="form-modal__item">
+                            <label for="question_mail">
+                                <em>*</em>
+                                Twój adres e-mail:
+                            </label>
+                            <input type="text" name="mail" id="question_mail" size="40" class="input">
+                            <span class="message">Pole wymagane</span>
+                        </div>
+                        <div class="form-modal__item">
+                            <label for="question_text">
+                                <em class="color">*</em>
+                                Pytanie:
+                            </label>
+                            <textarea name="question" id="question_text" rows="5" cols="40" class="input"></textarea>
+                            <span class="message">Pole wymagane</span>
+                        </div>
+                        <label class="form-modal__label">Odpowiedź zostanie wysłana na podany adres e-mail.</label>
+                        <div class="form-modal__mandatory">
+                            <span> - Pole wymagane</span>
+                        </div>
+                        <button type="submit" class="form-modal__submit">Wyślij</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
         <div class="product__popup-bootom product-popup-bootom">
             <div class="product-popup-bootom__item">
                 <div class="product-popup-bootom__photo">
@@ -565,10 +615,12 @@
             </div>
 
             <div class="product-popup-bootom__item">
-                <input type="text" value="1">
+                <input type="number" value="1">
                 <button class="btn-popup" data-id="box-products-modal-two">Dodaj do koszyka</button>
             </div>
         </div>
+
+
     </main>
     
     <footer class="footer">

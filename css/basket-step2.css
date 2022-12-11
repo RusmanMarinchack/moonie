@@ -87,6 +87,10 @@
   margin-bottom: 1em;
 }
 
+.basket-step2 .basket-step2-wrapper__item.register {
+  margin-bottom: 0;
+}
+
 @media screen and (max-width: 1199.98px) {
   .basket-step2 .basket-step2-wrapper__item.register {
     width: 100%;

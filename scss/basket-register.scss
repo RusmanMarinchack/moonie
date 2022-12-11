@@ -41,11 +41,11 @@
         border: 1px solid #d8d8d8;
         padding: 20px;
 
-        // .basket-register-footer {
-        //     position: absolute;
-        //     left: 20px;
-        //     bottom: 20px;
-        // }
+        .basket-register-footer {
+            position: absolute;
+            left: 20px;
+            bottom: 20px;
+        }
 
         & h4 {
             font-size: 18px;
@@ -134,8 +134,35 @@
     
         // .basket-basket-basket-register-form__wrapper
     
-        .basket-register-form-wrapper {
+        & .input-chackbox {
+            display: flex;
+            // justify-content: end;
+            margin-top: 5px;
+            margin-left: 10.5em;
 
+            @media screen and (max-width: 575.98px) {
+                margin-left: 0;
+            }
+
+            & label {
+                width: 19.5em !important;
+            }
+
+            // @media screen and (max-width: 991.98px) {
+            //     // justify-content: center;
+            // }
+            & input {
+                // display: none;
+            }
+        }
+
+        .basket-register-form-wrapper {
+            & .select {
+
+                &.label {
+                    text-align: end;
+                }
+            }
             &#another-address {
                 display: none;
 
@@ -147,30 +174,6 @@
                     display: block;
                 }
             }
-
-            & .input-chackbox {
-                display: flex;
-                // justify-content: end;
-                margin-top: 5px;
-                margin-left: 10.5em;
-
-                @media screen and (max-width: 991.98px) {
-                    margin-left: 0;
-                }
-
-                & label {
-                    width: 19.5em !important;
-                }
-
-                // @media screen and (max-width: 991.98px) {
-                //     // justify-content: center;
-                // }
-                & input {
-                    // display: none;
-                }
-            }
-            
-
 
             // .basket-basket-basket-basket-register-form-wrapper__inner
         
@@ -185,10 +188,11 @@
                 }
 
                 & label {
-                    display: inline-block;
-                    width: 10em;
-                    text-align: end;
-                    margin-right: 5px;
+                    // display: flex;
+                    // align-items: center;
+                    // width: 10em;
+                    // // text-align: end;
+                    // margin-right: 5px;
 
                     @media screen and (max-width: 575.98px) {
                         display: block;
@@ -217,6 +221,7 @@
             // .basket-basket-basket-basket-register-form-wrapper__item
         
             &__item {
+                display: flex;
                 margin-bottom: 10px;
 
                 @media screen and (max-width: 575.98px) {
@@ -226,6 +231,19 @@
                     &.input-radio {
                         flex-direction: inherit;
                     }
+                }
+
+                & select {
+                    max-width: 280px;
+                    width: 100%;
+                    border: 1px solid #d8d8d8;
+                    font-size: 14px;
+                    padding: 13px 30px;
+                    line-height: 1;
+                    min-height: 35px;
+                    outline: none;
+                    -webkit-transition: all 0.3s;
+                    transition: all 0.3s;
                 }
                 
                 &.textarea {
@@ -330,7 +348,7 @@
         text-align: center;
         & label {
             width: auto !important;
-            display: flex;
+            display: flex !important;
             align-items: center;
             position: relative;
             cursor: pointer;
@@ -350,13 +368,13 @@
 
             &::after {
                 content: '';
-                transform: scale(0);
                 width: 14px;
                 min-width: 14px;
                 height: 14px;
                 position: absolute;
-                left: 3.5px;
-                top: 3.5px;
+                left: 3px;
+                top: 50%;
+                transform: translateY(-50%) scale(0);
                 background: #000;
                 border-radius: 50%;
                 transition: all 0.3s;
@@ -366,7 +384,7 @@
             display: none;
 
             &:checked ~ label::after{
-                transform: scale(1);
+                transform: translateY(-50%) scale(1);
             } 
         }
 

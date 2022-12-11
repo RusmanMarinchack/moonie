@@ -204,11 +204,10 @@
                             content: '';
                             transform: scale(0);
                             width: 14px;
-                            min-width: 14px;
                             height: 14px;
                             position: absolute;
-                            left: 3.5px;
-                            top: 3.5px;
+                            left: 3px;
+                            top: 3px;
                             background: #000;
                             border-radius: 50%;
                             transition: all 0.3s;
