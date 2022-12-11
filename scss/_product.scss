@@ -842,6 +842,7 @@
                     height: auto;
                     border-radius: 2px;
                     outline: none;
+                    resize: vertical;
                     transition: all 0.3s; 
 
                     &.error {
@@ -851,6 +852,8 @@
                     &:focus {
                         border-color: #000;
                     }
+
+
                 }
 
                 & span {

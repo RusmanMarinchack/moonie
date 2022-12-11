@@ -13,7 +13,6 @@
       -ms-flex-align: center;
           align-items: center;
   margin-top: 1em;
-  border: 1px solid #f2f2f2;
   font-size: 12px;
   border-radius: 2px;
 }
@@ -89,7 +88,7 @@
   display: -ms-flexbox;
   display: flex;
   margin-top: 5px;
-  margin-left: 10.5em;
+  margin-left: 10.4em;
 }
 
 @media screen and (max-width: 575.98px) {
