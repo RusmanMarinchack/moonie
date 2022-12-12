@@ -1,0 +1,116 @@
+.store {
+
+    // @media screen and (max-width: 767.98px) {
+    //     margin-top: 140px;
+    // }
+
+    // .store__container
+
+    &__container {
+        display: flex;
+
+        & .box-products {
+            width: 90%;
+
+            @media screen and (max-width: 767.98px) {
+                width: 100%;
+            }
+        }
+    }
+
+    & .box-products {
+        margin-left: 20px;
+
+        @media screen and (max-width: 767.98px) {
+            margin-left: 0px;
+        }
+
+        &__title {
+            font-size: 26px;
+            text-align: start;
+            margin: 0;
+            margin-bottom: 1em;
+        }
+
+        &-wrapper__block-img {
+            height: 365px;
+
+            @media screen and (max-width: 991.98px) {
+                height: auto;
+            }
+        }
+
+        &-wrapper__item {
+            height: auto;
+        }
+    }
+
+    // .store__category
+
+    & .category {
+        width: 280px;
+
+        @media screen and (max-width: 767.98px) {
+            display: none;
+        }
+
+        // .category__title
+    
+        &__title {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 1em;
+        }
+    
+        // .category__inner
+    
+        &__inner {
+        }
+    
+        // .category__link
+    
+        &__link {
+            
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #000;
+
+            &.active {
+                display: inline-block;
+                color: #E98174;
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+        }
+    
+        // .category__list
+    
+        &__list {
+            margin-left: 15px;
+            padding: 0 10px;
+            list-style: none;
+        }
+    
+        // .category__item
+    
+        &__item {
+            display: flex;
+            align-items: center;
+
+            & span {
+                display: block;
+                font-size: 12px;
+                margin-right: 8px;
+            }
+
+            & .category__link {
+                display: flex;
+                line-height: 1.8;
+                margin-right: 20px;
+                font-size: 13px;
+            }
+        }
+    }
+}
+

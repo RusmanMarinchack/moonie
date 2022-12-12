@@ -242,6 +242,10 @@
             margin-top: 6em;
             letter-spacing: 0.15px;
             line-height: 19px;
+
+            @media screen and (max-width: 767.98px) {
+                margin-top: 3em;
+            }
 		}
 
 		// .product-info__detalis
@@ -393,6 +397,7 @@
                 &__item {
                     padding: 1px 15px 0 11px;
                     border: 1px solid transparent;
+                    cursor: pointer;
                     @media screen and (max-width: 767.98px) {
                         text-align: center;
                         border-bottom: 1px solid #d8d8d8;
@@ -688,214 +693,6 @@
         }
 
 }
-
-.product-popup-bootom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 1030px;
-    width: 100%;
-    height: auto;
-    background: #fff;
-    padding: 30px 20px;
-    box-shadow: 2px 2px 8px #dedede;
-    z-index: 9;
-    transition: all 0.3s;
-    opacity: 0;
-    visibility: hidden;
-
-    &.active {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    @media screen and (max-width: 767.98px){
-        display: none;
-    }
-
-    &__item {
-        display: flex;
-        align-items: center;
-
-        & input {
-            height: 40px;
-            border: 1px solid #dedede;
-            width: 40px;
-            text-align: center;
-            margin-right: 10px;
-        }
-
-        & button {
-            border: none;
-            border-radius: 2px;
-            min-height: 44px;
-            line-height: 1.35;
-            padding: 0.35em 0.85em;
-        }
-    }
-
-    &__photo {
-        & img {
-            max-height: 70px;
-            margin-right: 15px;
-        }
-    }
-
-    &__name {
-        font-weight: 900;
-        text-transform: uppercase;
-    }
-}
-
-
-.modal-form {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    background-image: radial-gradient(ellipse farthest-corner at center center, rgba(127, 127, 127, 0.5), rgba(127, 127, 127, 0.5) 35%, rgba(0, 0, 0, 0.7) 100%);
-    z-index: 20;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s;
-
-    &.active {
-        opacity: 1;
-        visibility: visible;
-
-        & .modal-form__popap {
-            right: 0;
-        }
-    }
-
-        // .modal-form__popap
-
-        &__popap {
-            max-width: 375px;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            right: -150%;
-            top: 0;
-            padding: 0 20px 20px;
-            background: #fff;
-            overflow: auto;
-            -webkit-transition: all 0.3s;
-            transition: all 0.3s;
-        }
-
-        // .modal-form__header
-
-        &__header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 0;
-        }
-
-        // .modal-form__title
-
-        &__title {
-            font-size: 16px;
-            letter-spacing: 4px;
-            line-height: 0.94;
-            text-transform: uppercase;
-        }
-
-        // .modal-form__close
-
-        &__close {
-        }
-
-        // .modal-form__body
-
-        &__body {
-        }
-
-        // .modal-form__form
-
-        .form-modal {
-
-            // .form-modal__item
-    
-            &__item {
-                margin-bottom: 5px;
-                & label {
-                    font-weight: normal;
-                    color: rgb(144, 144, 144);
-                    cursor: pointer;
-                }
-
-                & .input {
-                    border: 1px solid #f4f4f4;
-                    color: #000;
-                    font-size: 14px;
-                    padding: 13px 30px;
-                    line-height: 1;
-                    width: 100%;
-                    height: auto;
-                    border-radius: 2px;
-                    outline: none;
-                    resize: vertical;
-                    transition: all 0.3s; 
-
-                    &.error {
-                        border-color: red;
-                    }
-
-                    &:focus {
-                        border-color: #000;
-                    }
-
-
-                }
-
-                & span {
-                    display: none;
-                    color: red;
-
-                    &.error {
-                        display: inline-block;
-                    }
-                }
-            }
-    
-            // .form-modal__label
-    
-            &__label {
-            }
-    
-            // .form-modal__mandatory
-    
-            &__mandatory {
-            }
-    
-            // .form-modal__submit
-    
-            &__submit {
-                display: inline-block;
-                padding: 0.35em 0.85em;
-                margin: 0;
-                line-height: 1.35;
-                font-size: 14px;
-                margin-top: 5px;
-                border: none;
-                border-radius: 2px;
-                background: #000;
-                color: #fff;
-            }
-    }
-}
-
-
-
-
 
 
 
