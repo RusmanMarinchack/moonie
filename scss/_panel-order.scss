@@ -1,0 +1,136 @@
+.panel-order {
+
+    // .panel-order__container
+
+    &__container {
+    }
+
+    // .panel-order__title
+
+    &__title {
+    }
+
+    // .panel-order__wrapper
+
+    &__wrapper {
+    }
+
+    // .panel-order__details
+
+    .panel-order-details {
+        display: flex;
+        margin: 3em 0;
+
+        @media screen and (max-width: 991.98px) {
+            flex-direction: column;
+        }
+        // .panel-order-details__list
+    
+        &__list {
+            width: 33.333%;
+            list-style: none;
+
+            @media screen and (max-width: 991.98px) {
+                width: 100%;
+                margin-bottom: 2em;
+            }
+
+            &:not(:first-child) {
+                padding-left: 2em;
+                border-left: 1px solid #d8d8d8;
+
+                @media screen and (max-width: 991.98px) {
+                    padding-left: 0;
+                    border-left: none;
+                }
+            }
+        }
+    
+        // .panel-order-details__item
+    
+        &__item {
+            line-height: 25px;
+            & p {
+                margin: 0;
+            }
+        }
+    }
+
+    // .panel-order__products
+
+    &__products {
+
+        & .panel-order-products__title {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 21px;
+            margin-bottom: 0.5em;
+        }
+
+        margin-bottom: 1em;
+    }
+
+    // .panel-order__price
+
+    .panel-order-price {
+        &__item {
+            display: flex;
+            justify-content: flex-end;
+            line-height: 30px;
+
+            & .value {
+                width: 20%;
+                text-align: end;
+                margin-left: 10px;
+            }
+        }
+
+        // .panel-order-price__together
+    
+        & .together {
+
+            // .together__label
+        
+            &__label {
+            }
+        
+            // .together__value
+        
+            &__value {
+            }
+        }
+    
+        // .panel-order-price__delivery
+    
+        & .delivery {
+
+            // .delivery__label
+        
+            &__label {
+            }
+        
+            // .delivery__value
+        
+            &__value {
+            }
+        }
+    
+        // .panel-order-price__pay
+    
+        & .pay {
+
+            // .pay__label
+        
+            &__label {
+            }
+        
+            // .pay__value
+        
+            & .value {
+                font-size: 1.2em;
+                font-weight: 700;
+                
+            }
+        }
+    }
+}

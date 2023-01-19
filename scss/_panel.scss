@@ -1,0 +1,100 @@
+.panel {
+
+    // .panel__container
+
+    &__container {
+    }
+
+    // .panel__title
+
+    &__title {
+    }
+
+    // .panel__wrapper
+
+    .panel-wrapper {
+
+        // .panel-wrapper__title
+    
+        &__title {
+           
+        }
+    
+        // .panel-wrapper__item
+    
+        .panel-wrapper-item {
+            & h4 {
+                font-size: 1.2em;
+                padding: 1em 0;
+            }
+
+            // .panel-wrapper-item__inner
+        
+            &__inner {
+
+                &.column {
+                    display: flex;
+
+                    @media screen and (max-width: 767.98px) {
+                        flex-direction: column;
+                    }
+                     
+
+                    & .panel-wrapper-item__column {
+                        width: 48%;
+
+                        @media screen and (max-width: 767.98px) {
+                            width: 100%;
+                        }
+                        
+                        &:not(:last-child) {
+                            margin-right: 2%;
+
+                            @media screen and (max-width: 767.98px) {
+                                margin-right: 0;
+                                margin-bottom: 1.5em;
+                            }
+                        }
+
+                        & b {
+                            display: block;
+                            border-bottom: 1px solid #d8d8d8;
+                            padding-bottom: 0.5em;
+                            margin-bottom: 0.5em;
+                        }
+                    }
+                }
+ 
+
+                & p {
+                    margin: 0;
+                    line-height: 25px;
+                }
+            }
+        
+            // .panel-wrapper-item__name
+        
+            &__name {
+            }
+        
+            // .panel-wrapper-item__mail
+        
+            &__mail {
+            }
+        
+            // .panel-wrapper-item__column
+        
+            &__column {
+
+
+            }
+        }
+
+
+    }
+}
+
+
+
+
+

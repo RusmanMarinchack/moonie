@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/fonts-icon.css">
+    <title>Edit</title>
+</head>
+<body class="b-addres-edit">
+    
+    <header class="header headers h-panel">
+        <div class="header__container _container">
+            <div class="header__logo">
+                <a href="./index.html">
+                    <img src="./imgs/svg/logo.svg" alt="Logo">
+                </a>
+            </div>
+
+            <div class="header__language language mob sublist">
+                <span class="language__active">PL <span>&#8249;</span></span>
+                <ul class="language__list">
+                    <li class="language__item"><a href="#" class="language__link">PL</a></li>
+                    <li class="language__item"><a href="#" class="language__link">PL</a></li>
+                    <li class="language__item"><a href="#" class="language__link">PL</a></li>
+                    <li class="language__item"><a href="#" class="language__link">PL</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="header__inner">
+                <div class="header__item burger sublist">
+                    <span class="_icon-hamburger"></span>
+                </div>
+                <nav class="header__nav nav">
+                    <ul class="nav__menu">
+                        <li class="nav__item sublist">
+                            <a href="#" class="nav__link">SKLEP</a>
+                            <span>&#x276E;</span>
+                            <ul class="nav__sublist nav-sublist">
+                                <li class="nav-sublist__item"><a href="./store.html" title="SZUMIĄCE MISIE Z LAMPKĄ" class="nav-sublist__link">SZUMIĄCE MISIE Z LAMPKĄ</a></li>
+                                <li class="nav-sublist__item"><a href="./store.html" title="SZUMIĄCE KRÓLICZKI Z LAMPKĄ" class="nav-sublist__link">SZUMIĄCE KRÓLICZKI Z LAMPKĄ</a></li>
+                                <li class="nav-sublist__item"><a href="./store.html" title="KRÓLICZKI SENSORYCZNE" class="nav-sublist__link">KRÓLICZKI SENSORYCZNE</a></li>
+                                <li class="nav-sublist__item"><a href="./store.html" title="NA PREZENTs" class="nav-sublist__link">NA PREZENT</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__item sublist">
+                            <a href="#" class="nav__link">Kolekcje</a>
+                            <ul class="nav__sublist nav-sublist">
+                                <li class="nav-sublist__item"><a href="./collections.html" class="nav-sublist__link">SZUMIĄCE MISIE</a></li>
+                                <li class="nav-sublist__item"><a href="./collections.html" class="nav-sublist__link">SZUMIĄCE KRÓLICZKI</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__item"><a href="#" class="nav__link">ZESTAWY</a></li>
+                        <li class="nav__item mob"><a href="./collections.html" class="nav__link">SZUMIĄCE MISIE</a></li>
+                        <li class="nav__item mob"><a href="./collections.html" class="nav__link">SZUMIĄCE KRÓLICZKI</a></li>
+                        <li class="nav__item"><a href="./contact.html" class="nav__link">KONTAKT</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header__language language sublist">
+                    <span class="language__active">PL <span>&#8249;</span></span>
+                    <ul class="language__list">
+                        <li class="language__item"><a href="#" class="language__link">PL</a></li>
+                        <li class="language__item"><a href="#" class="language__link">PL</a></li>
+
+
+                    </ul>
+                </div>
+
+                <div class="header__icons icons">
+                    
+
+                    <div class="icons__item user sublist">
+                        <button class="_icon-user">
+                            <a href="./login.html"></a>
+                        </button>
+                        <ul class="icons__office-exit office-exit">
+                            <li class="office-exit__item hallo">Witaj <b>Руслан Маринчак</b></li>
+                            <li class="office-exit__item"><a href="./panel.html" class="office-exit__link register">Moje konto</a></li>
+                            <li class="office-exit__item"><a href="#" class="office-exit__link login">Wyloguj</a></li>
+                        </ul>
+                    </div>
+                    <div class="icons__item search sublist">
+                        <button class="search__btn"><span class="_icon-loupe"></span></button>
+                        <div class="search__block search-block">
+                            <button class="search-block__close">&#10005;</button>
+                            <form action="#" class="search-block__form search-block-form">
+                                <div class="search-block-form__item form-item">
+                                    <div class="search-block-form__not-value"><span>&#10006;</span></div>
+                                    <input class="input" type="text" name="search" placeholder="Szukaj">
+                                    <button class="search-block-form__btn" type="submit"><span class="_icon-loupe"></span></button>
+                                    <div class="search-block-form__message message">
+                                        <p>Wpisz szukane hasło.</p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="icons__item btn-popup basket _icon-cart" data-id="popup-basket"><a class="bsket-mob" href="./basket.html"></a><span>0</span></div>
+                </div>
+            </div>
+            
+            <div class="modal header__popup-basket h-popup-basket" id="popup-basket">
+                <div class="h-popup-basket__popup">
+                    <div class="h-popup-basket__header">
+                        <h3 class="h-popup-basket__title">Koszyk:</h3>
+                        <div class="h-popup-basket__close">
+                            <span class="_icon-close"></span>
+                        </div>
+                    </div>
+
+                    <div class="h-popup-basket__product popup-basket-product">
+                        <ul class="popup-basket-product__list">
+                            <li class="popup-basket-product__item">
+                                <div class="popup-basket-product__imgs">
+                                    <img src="./imgs/basket/basket_1.jpg" alt="Product">
+                                </div>
+                                <a class="popup-basket-product__name" href="#">SAND - SZUMIĄCY MIŚ ORGANIC Z LAMPKĄ</a>
+                                <div class="popup-basket-product__info">
+                                    <span class="popup-basket-product__amount">1</span>
+                                    x
+                                    <span class="popup-basket-product__price">229,00 zł</span>
+                                </div>
+                                <div class="popup-basket-product__remove">
+                                    <a href="#">
+                                        usuń
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="popup-basket-product__item">
+                                <div class="popup-basket-product__imgs">
+                                    <img src="./imgs/basket/basket_1.jpg" alt="Product">
+                                </div>
+                                <a class="popup-basket-product__name" href="#">SAND - SZUMIĄCY MIŚ ORGANIC Z LAMPKĄ</a>
+                                <div class="popup-basket-product__info">
+                                    <span class="popup-basket-product__amount">1</span>
+                                    x
+                                    <span class="popup-basket-product__price">229,00 zł</span>
+                                </div>
+                                <div class="popup-basket-product__remove">
+                                    <a href="#">
+                                        usuń
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="h-popup-basket__summery popup-basket-summery">
+                        <a href="./basket.html">do kasy</a>
+                        <div class="popup-basket-summery__prices">
+                            <div class="popup-basket-summery__inner">
+                                <span class="popup-basket-summery__suma">suma:</span>
+                                <span class="popup-basket-summery__total">229,00&nbsp;zł</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__shadow"></div>
+        </div>
+    </header>
+
+        <main class="main">
+            <section class="main__basket-register basket-register addres-edit">
+                <div class="basket-register__container _container">
+                    <div class="basket-register__wrapper">
+                        <form action="#" class="basket-register__form basket-register-form">
+                            <div class="basket-register-form__container">
+                                <div class="basket-register-form__wrapper basket-register-form-wrapper">
+                                    <h4 class="basket-register-form-wrapper__title">Nowy adres</h4>
+                                    <div class="basket-register-form-wrapper__inner">
+                                        <div class="basket-register-form-wrapper__item">
+                                            <label for="input_surname">Imię:</label>
+                                            <input class="input" type="text" value="" name="surname" id="input_surname">
+                                        </div>
+                                        <div class="basket-register-form-wrapper__item">
+                                            <label for="input_surname"><em class="color">*</em> Nazwisko:</label>
+                                            <input class="input" type="text" id="input_surname">
+                                            <span class="message">Pole wymagane</span>
+                                        </div>
+                                        <div class="basket-register-form-wrapper__item">
+                                            <label for="input_phone"><em class="color">*</em> Telefon:</label>
+                                            <input class="input" type="number" value="" name="phone" id="input_phone">
+                                            <span>Format liczbowy, np.: 123456789</span>
+                                        </div>
+                                        <div class="basket-register-form-wrapper__item">
+                                            <label for="input_coname">Nazwa firmy:</label>
+                                            <input class="input" type="text" value="" name="coname" id="input_coname" size="25">
+                                        </div>
+                                        <div class="basket-register-form-wrapper__item">
+                                            <label for="input_nip">NIP:</label>
+                                            <input class="input" type="text" value="" name="nip" size="25" id="input_nip">
+                                            <span class="message">Pole wymagane</span>
+                                        </div>
+                                        <div class="basket-register-form-wrapper__item">
+                                            <label for="input_other_address"><em class="color">*</em> Ulica i nr domu:</label>
+                                            <input class="input" type="text" value="" name="other_address" value="" size="25" id="input_other_address">
+                                            <span>Np.: Mickiewicza 6/24</span>
+                                        </div>
+                                        <div class="basket-register-form-wrapper__item">
+                                            <label for="input_zip"><em class="color">*</em> Kod pocztowy:</label>
+                                            <input class="input" type="number" value="" name="zip" value="" size="25" id="input_zip" autocomplete="off">
+                                            <span>Format dla Polski: xx-xxx</span>
+                                        </div>
+                                        <div class="basket-register-form-wrapper__item">
+                                            <label for="input_city"><em class="color">*</em> Miasto:</label>
+                                            <input class="input" type="text" value="" name="city" value="" size="25" id="input_city">
+                                        </div>
+
+                                        <div class="basket-register-form-wrapper__item">
+                                            <label for="input_country"><em class="color">*</em> Miasto:</label>
+                                            <select class="input" name="country" id="input_country">
+                                                <option data-value="3" data-region="0" value="AF">Afganistan</option>
+                                                <option data-value="6" data-region="0" value="AL">Albania</option>
+                                                <option data-value="62" data-region="0" value="DZ">Algieria</option>
+                                                <option data-value="1" data-region="0" value="AD">Andora</option>
+                                                <option data-value="8" data-region="0" value="AO">Angola</option>
+                                                <option data-value="5" data-region="0" value="AI">Anguilla</option>
+                                                <option data-value="9" data-region="0" value="AQ">Antarktyka</option>
+                                                <option data-value="4" data-region="0" value="AG">Antigua i Barbuda</option>
+                                                <option data-value="193" data-region="0" value="SA">Arabia Saudyjska</option>
+                                                <option data-value="10" data-region="0" value="AR">Argentyna</option>
+                                                <option data-value="7" data-region="0" value="AM">Armenia</option>
+                                                <option data-value="14" data-region="0" value="AW">Aruba</option>
+                                                <option data-value="13" data-region="0" value="AU">Australia</option>
+                                                <option data-value="12" data-region="0" value="AT">Austria</option>
+                                                <option data-value="16" data-region="0" value="AZ">Azerbejdżan</option>
+                                                <option data-value="32" data-region="0" value="BS">Bahamy</option>
+                                                <option data-value="23" data-region="0" value="BH">Bahrajn</option>
+                                                <option data-value="19" data-region="0" value="BD">Bangladesz</option>
+                                                <option data-value="18" data-region="0" value="BB">Barbados</option>
+                                                <option data-value="20" data-region="0" value="BE">Belgia</option>
+                                                <option data-value="37" data-region="0" value="BZ">Belize</option>
+                                                <option data-value="25" data-region="0" value="BJ">Benin</option>
+                                                <option data-value="27" data-region="0" value="BM">Bermudy</option>
+                                                <option data-value="33" data-region="0" value="BT">Bhutan</option>
+                                                <option data-value="36" data-region="0" value="BY">Białoruś</option>
+                                                <option data-value="29" data-region="0" value="BO">Boliwia</option>
+                                                <option data-value="17" data-region="0" value="BA">
+                                                  Bośnia i Hercegowina
+                                                </option>
+                                                <option data-value="35" data-region="0" value="BW">Botswana</option>
+                                                <option data-value="31" data-region="0" value="BR">Brazylia</option>
+                                                <option data-value="28" data-region="0" value="BN">Brunei Darussalam</option>
+                                                <option data-value="106" data-region="0" value="IO">
+                                                  Brytyjskie Terytorium Oceanu Indyjskiego
+                                                </option>
+                                                <option data-value="239" data-region="0" value="VG">
+                                                  Brytyjskie Wyspy Dziewicze
+                                                </option>
+                                                <option data-value="22" data-region="0" value="BG">Bułgaria</option>
+                                                <option data-value="21" data-region="0" value="BF">Burkina Faso</option>
+                                                <option data-value="24" data-region="0" value="BI">Burundi</option>
+                                                <option data-value="46" data-region="0" value="CL">Chile</option>
+                                                <option data-value="48" data-region="0" value="CN">Chiny</option>
+                                                <option data-value="98" data-region="0" value="HR">Chorwacja</option>
+                                                <option data-value="44" data-region="0" value="CI">Côte d’Ivoire</option>
+                                                <option data-value="53" data-region="0" value="CW">Curaçao</option>
+                                                <option data-value="55" data-region="0" value="CY">Cypr</option>
+                                                <option data-value="215" data-region="0" value="TD">Czad</option>
+                                                <option data-value="140" data-region="0" value="ME">Czarnogóra</option>
+                                                <option data-value="56" data-region="0" value="CZ">Czechy</option>
+                                                <option data-value="232" data-region="0" value="UM">
+                                                  Dalekie Wyspy Mniejsze Stanów Zjednoczonych
+                                                </option>
+                                                <option data-value="59" data-region="0" value="DK">Dania</option>
+                                                <option data-value="40" data-region="0" value="CD">
+                                                  Demokratyczna Republika Konga
+                                                </option>
+                                                <option data-value="60" data-region="0" value="DM">Dominika</option>
+                                                <option data-value="61" data-region="0" value="DO">Dominikana</option>
+                                                <option data-value="58" data-region="0" value="DJ">Dżibuti</option>
+                                                <option data-value="65" data-region="0" value="EG">Egipt</option>
+                                                <option data-value="63" data-region="0" value="EC">Ekwador</option>
+                                                <option data-value="67" data-region="0" value="ER">Erytrea</option>
+                                                <option data-value="64" data-region="0" value="EE">Estonia</option>
+                                                <option data-value="69" data-region="0" value="ET">Etiopia</option>
+                                                <option data-value="72" data-region="0" value="FK">Falklandy</option>
+                                                <option data-value="71" data-region="0" value="FJ">Fidżi</option>
+                                                <option data-value="177" data-region="0" value="PH">Filipiny</option>
+                                                <option data-value="70" data-region="0" value="FI">Finlandia</option>
+                                                <option data-value="75" data-region="0" value="FR">Francja</option>
+                                                <option data-value="216" data-region="0" value="TF">
+                                                  Francuskie Terytoria Południowe
+                                                </option>
+                                                <option data-value="76" data-region="0" value="GA">Gabon</option>
+                                                <option data-value="85" data-region="0" value="GM">Gambia</option>
+                                                <option data-value="90" data-region="0" value="GS">
+                                                  Georgia Południowa i Sandwich Południowy
+                                                </option>
+                                                <option data-value="82" data-region="0" value="GH">Ghana</option>
+                                                <option data-value="83" data-region="0" value="GI">Gibraltar</option>
+                                                <option data-value="89" data-region="0" value="GR">Grecja</option>
+                                                <option data-value="78" data-region="0" value="GD">Grenada</option>
+                                                <option data-value="84" data-region="0" value="GL">Grenlandia</option>
+                                                <option data-value="79" data-region="0" value="GE">Gruzja</option>
+                                                <option data-value="92" data-region="0" value="GU">Guam</option>
+                                                <option data-value="94" data-region="0" value="GY">Gujana</option>
+                                                <option data-value="80" data-region="0" value="GF">Gujana Francuska</option>
+                                                <option data-value="87" data-region="0" value="GP">Gwadelupa</option>
+                                                <option data-value="91" data-region="0" value="GT">Gwatemala</option>
+                                                <option data-value="86" data-region="0" value="GN">Gwinea</option>
+                                                <option data-value="93" data-region="0" value="GW">Gwinea Bissau</option>
+                                                <option data-value="88" data-region="0" value="GQ">Gwinea Równikowa</option>
+                                                <option data-value="99" data-region="0" value="HT">Haiti</option>
+                                                <option data-value="68" data-region="0" value="ES">Hiszpania</option>
+                                                <option data-value="166" data-region="0" value="NL">Holandia</option>
+                                                <option data-value="97" data-region="0" value="HN">Honduras</option>
+                                                <option data-value="95" data-region="0" value="HK">Hongkong SAR</option>
+                                                <option data-value="105" data-region="0" value="IN">Indie</option>
+                                                <option data-value="101" data-region="0" value="ID">Indonezja</option>
+                                                <option data-value="107" data-region="0" value="IQ">Irak</option>
+                                                <option data-value="108" data-region="0" value="IR">Iran</option>
+                                                <option data-value="102" data-region="0" value="IE">Irlandia</option>
+                                                <option data-value="250" data-region="0" value="XI">Irlandia Północna</option>
+                                                <option data-value="109" data-region="0" value="IS">Islandia</option>
+                                                <option data-value="103" data-region="0" value="IL">Izrael</option>
+                                                <option data-value="112" data-region="0" value="JM">Jamajka</option>
+                                                <option data-value="114" data-region="0" value="JP">Japonia</option>
+                                                <option data-value="245" data-region="0" value="YE">Jemen</option>
+                                                <option data-value="113" data-region="0" value="JO">Jordania</option>
+                                                <option data-value="124" data-region="0" value="KY">Kajmany</option>
+                                                <option data-value="117" data-region="0" value="KH">Kambodża</option>
+                                                <option data-value="47" data-region="0" value="CM">Kamerun</option>
+                                                <option data-value="38" data-region="0" value="CA">Kanada</option>
+                                                <option data-value="187" data-region="0" value="QA">Katar</option>
+                                                <option data-value="125" data-region="0" value="KZ">Kazachstan</option>
+                                                <option data-value="115" data-region="0" value="KE">Kenia</option>
+                                                <option data-value="116" data-region="0" value="KG">Kirgistan</option>
+                                                <option data-value="118" data-region="0" value="KI">Kiribati</option>
+                                                <option data-value="49" data-region="0" value="CO">Kolumbia</option>
+                                                <option data-value="119" data-region="0" value="KM">Komory</option>
+                                                <option data-value="42" data-region="0" value="CG">Kongo</option>
+                                                <option data-value="122" data-region="0" value="KR">Korea Południowa</option>
+                                                <option data-value="121" data-region="0" value="KP">Korea Północna</option>
+                                                <option data-value="50" data-region="0" value="CR">Kostaryka</option>
+                                                <option data-value="51" data-region="0" value="CU">Kuba</option>
+                                                <option data-value="123" data-region="0" value="KW">Kuwejt</option>
+                                                <option data-value="126" data-region="0" value="LA">Laos</option>
+                                                <option data-value="132" data-region="0" value="LS">Lesotho</option>
+                                                <option data-value="127" data-region="0" value="LB">Liban</option>
+                                                <option data-value="131" data-region="0" value="LR">Liberia</option>
+                                                <option data-value="136" data-region="0" value="LY">Libia</option>
+                                                <option data-value="129" data-region="0" value="LI">Liechtenstein</option>
+                                                <option data-value="133" data-region="0" value="LT">Litwa</option>
+                                                <option data-value="134" data-region="0" value="LU">Luksemburg</option>
+                                                <option data-value="135" data-region="0" value="LV">Łotwa</option>
+                                                <option data-value="144" data-region="0" value="MK">Macedonia</option>
+                                                <option data-value="142" data-region="0" value="MG">Madagaskar</option>
+                                                <option data-value="246" data-region="0" value="YT">Majotta</option>
+                                                <option data-value="148" data-region="0" value="MO">Makau SAR</option>
+                                                <option data-value="156" data-region="0" value="MW">Malawi</option>
+                                                <option data-value="155" data-region="0" value="MV">Malediwy</option>
+                                                <option data-value="158" data-region="0" value="MY">Malezja</option>
+                                                <option data-value="145" data-region="0" value="ML">Mali</option>
+                                                <option data-value="153" data-region="0" value="MT">Malta</option>
+                                                <option data-value="149" data-region="0" value="MP">Mariany Północne</option>
+                                                <option data-value="137" data-region="0" value="MA">Maroko</option>
+                                                <option data-value="150" data-region="0" value="MQ">Martynika</option>
+                                                <option data-value="151" data-region="0" value="MR">Mauretania</option>
+                                                <option data-value="154" data-region="0" value="MU">Mauritius</option>
+                                                <option data-value="157" data-region="0" value="MX">Meksyk</option>
+                                                <option data-value="73" data-region="0" value="FM">Mikronezja</option>
+                                                <option data-value="146" data-region="0" value="MM">Mjanma (Birma)</option>
+                                                <option data-value="139" data-region="0" value="MD">Mołdawia</option>
+                                                <option data-value="138" data-region="0" value="MC">Monako</option>
+                                                <option data-value="147" data-region="0" value="MN">Mongolia</option>
+                                                <option data-value="152" data-region="0" value="MS">Montserrat</option>
+                                                <option data-value="159" data-region="0" value="MZ">Mozambik</option>
+                                                <option data-value="160" data-region="0" value="NA">Namibia</option>
+                                                <option data-value="169" data-region="0" value="NR">Nauru</option>
+                                                <option data-value="168" data-region="0" value="NP">Nepal</option>
+                                                <option data-value="30" data-region="0" value="BQ">
+                                                  Niderlandy Karaibskie
+                                                </option>
+                                                <option data-value="57" data-region="0" value="DE">Niemcy</option>
+                                                <option data-value="162" data-region="0" value="NE">Niger</option>
+                                                <option data-value="164" data-region="0" value="NG">Nigeria</option>
+                                                <option data-value="165" data-region="0" value="NI">Nikaragua</option>
+                                                <option data-value="170" data-region="0" value="NU">Niue</option>
+                                                <option data-value="163" data-region="0" value="NF">Norfolk</option>
+                                                <option data-value="167" data-region="0" value="NO">Norwegia</option>
+                                                <option data-value="161" data-region="0" value="NC">Nowa Kaledonia</option>
+                                                <option data-value="171" data-region="0" value="NZ">Nowa Zelandia</option>
+                                                <option data-value="172" data-region="0" value="OM">Oman</option>
+                                                <option data-value="178" data-region="0" value="PK">Pakistan</option>
+                                                <option data-value="185" data-region="0" value="PW">Palau</option>
+                                                <option data-value="173" data-region="0" value="PA">Panama</option>
+                                                <option data-value="176" data-region="0" value="PG">Papua-Nowa Gwinea</option>
+                                                <option data-value="186" data-region="0" value="PY">Paragwaj</option>
+                                                <option data-value="174" data-region="0" value="PE">Peru</option>
+                                                <option data-value="181" data-region="0" value="PN">Pitcairn</option>
+                                                <option data-value="175" data-region="0" value="PF">
+                                                  Polinezja Francuska
+                                                </option>
+                                                <option data-value="179" selected="selected" data-region="0" value="PL">
+                                                  Polska
+                                                </option>
+                                                <option data-value="182" data-region="0" value="PR">Portoryko</option>
+                                                <option data-value="184" data-region="0" value="PT">Portugalia</option>
+                                                <option data-value="247" data-region="0" value="ZA">
+                                                  Republika Południowej Afryki
+                                                </option>
+                                                <option data-value="41" data-region="0" value="CF">
+                                                  Republika Środkowoafrykańska
+                                                </option>
+                                                <option data-value="52" data-region="0" value="CV">
+                                                  Republika Zielonego Przylądka
+                                                </option>
+                                                <option data-value="188" data-region="0" value="RE">Reunion</option>
+                                                <option data-value="191" data-region="0" value="RU">Rosja</option>
+                                                <option data-value="189" data-region="0" value="RO">Rumunia</option>
+                                                <option data-value="192" data-region="0" value="RW">Rwanda</option>
+                                                <option data-value="66" data-region="0" value="EH">Sahara Zachodnia</option>
+                                                <option data-value="120" data-region="0" value="KN">
+                                                  Saint Kitts i Nevis
+                                                </option>
+                                                <option data-value="128" data-region="0" value="LC">Saint Lucia</option>
+                                                <option data-value="237" data-region="0" value="VC">
+                                                  Saint Vincent i Grenadyny
+                                                </option>
+                                                <option data-value="26" data-region="0" value="BL">Saint-Barthélemy</option>
+                                                <option data-value="141" data-region="0" value="MF">Saint-Martin</option>
+                                                <option data-value="180" data-region="0" value="PM">
+                                                  Saint-Pierre i Miquelon
+                                                </option>
+                                                <option data-value="210" data-region="0" value="SV">Salwador</option>
+                                                <option data-value="244" data-region="0" value="WS">Samoa</option>
+                                                <option data-value="11" data-region="0" value="AS">Samoa Amerykańskie</option>
+                                                <option data-value="204" data-region="0" value="SM">San Marino</option>
+                                                <option data-value="205" data-region="0" value="SN">Senegal</option>
+                                                <option data-value="190" data-region="0" value="RS">Serbia</option>
+                                                <option data-value="195" data-region="0" value="SC">Seszele</option>
+                                                <option data-value="203" data-region="0" value="SL">Sierra Leone</option>
+                                                <option data-value="198" data-region="0" value="SG">Singapur</option>
+                                                <option data-value="211" data-region="0" value="SX">Sint Maarten</option>
+                                                <option data-value="202" data-region="0" value="SK">Słowacja</option>
+                                                <option data-value="200" data-region="0" value="SI">Słowenia</option>
+                                                <option data-value="206" data-region="0" value="SO">Somalia</option>
+                                                <option data-value="130" data-region="0" value="LK">Sri Lanka</option>
+                                                <option data-value="233" data-region="0" value="US">Stany Zjednoczone</option>
+                                                <option data-value="213" data-region="0" value="SZ">Suazi</option>
+                                                <option data-value="196" data-region="0" value="SD">Sudan</option>
+                                                <option data-value="208" data-region="0" value="SS">Sudan Południowy</option>
+                                                <option data-value="207" data-region="0" value="SR">Surinam</option>
+                                                <option data-value="201" data-region="0" value="SJ">
+                                                  Svalbard i Jan Mayen
+                                                </option>
+                                                <option data-value="212" data-region="0" value="SY">Syria</option>
+                                                <option data-value="43" data-region="0" value="CH">Szwajcaria</option>
+                                                <option data-value="197" data-region="0" value="SE">Szwecja</option>
+                                                <option data-value="219" data-region="0" value="TJ">Tadżykistan</option>
+                                                <option data-value="218" data-region="0" value="TH">Tajlandia</option>
+                                                <option data-value="228" data-region="0" value="TW">Tajwan</option>
+                                                <option data-value="229" data-region="0" value="TZ">Tanzania</option>
+                                                <option data-value="183" data-region="0" value="PS">
+                                                  Terytoria Palestyńskie
+                                                </option>
+                                                <option data-value="221" data-region="0" value="TL">Timor Wschodni</option>
+                                                <option data-value="217" data-region="0" value="TG">Togo</option>
+                                                <option data-value="220" data-region="0" value="TK">Tokelau</option>
+                                                <option data-value="224" data-region="0" value="TO">Tonga</option>
+                                                <option data-value="226" data-region="0" value="TT">Trynidad i Tobago</option>
+                                                <option data-value="223" data-region="0" value="TN">Tunezja</option>
+                                                <option data-value="225" data-region="0" value="TR">Turcja</option>
+                                                <option data-value="222" data-region="0" value="TM">Turkmenistan</option>
+                                                <option data-value="214" data-region="0" value="TC">Turks i Caicos</option>
+                                                <option data-value="227" data-region="0" value="TV">Tuvalu</option>
+                                                <option data-value="231" data-region="0" value="UG">Uganda</option>
+                                                <option data-value="230" data-region="0" value="UA">Ukraina</option>
+                                                <option data-value="234" data-region="0" value="UY">Urugwaj</option>
+                                                <option data-value="235" data-region="0" value="UZ">Uzbekistan</option>
+                                                <option data-value="242" data-region="0" value="VU">Vanuatu</option>
+                                                <option data-value="243" data-region="0" value="WF">Wallis i Futuna</option>
+                                                <option data-value="236" data-region="0" value="VA">Watykan</option>
+                                                <option data-value="238" data-region="0" value="VE">Wenezuela</option>
+                                                <option data-value="100" data-region="0" value="HU">Węgry</option>
+                                                <option data-value="77" data-region="0" value="GB">Wielka Brytania</option>
+                                                <option data-value="241" data-region="0" value="VN">Wietnam</option>
+                                                <option data-value="110" data-region="0" value="IT">Włochy</option>
+                                                <option data-value="34" data-region="0" value="BV">Wyspa Bouveta</option>
+                                                <option data-value="54" data-region="0" value="CX">
+                                                  Wyspa Bożego Narodzenia
+                                                </option>
+                                                <option data-value="81" data-region="0" value="GG">Wyspa Guernsey</option>
+                                                <option data-value="111" data-region="0" value="JE">Wyspa Jersey</option>
+                                                <option data-value="104" data-region="0" value="IM">Wyspa Man</option>
+                                                <option data-value="199" data-region="0" value="SH">
+                                                  Wyspa Świętej Heleny
+                                                </option>
+                                                <option data-value="15" data-region="0" value="AX">Wyspy Alandzkie</option>
+                                                <option data-value="45" data-region="0" value="CK">Wyspy Cooka</option>
+                                                <option data-value="240" data-region="0" value="VI">
+                                                  Wyspy Dziewicze Stanów Zjednoczonych
+                                                </option>
+                                                <option data-value="96" data-region="0" value="HM">
+                                                  Wyspy Heard i McDonalda
+                                                </option>
+                                                <option data-value="39" data-region="0" value="CC">Wyspy Kokosowe</option>
+                                                <option data-value="143" data-region="0" value="MH">Wyspy Marshalla</option>
+                                                <option data-value="74" data-region="0" value="FO">Wyspy Owcze</option>
+                                                <option data-value="194" data-region="0" value="SB">Wyspy Salomona</option>
+                                                <option data-value="209" data-region="0" value="ST">
+                                                  Wyspy Świętego Tomasza i Książęca
+                                                </option>
+                                                <option data-value="248" data-region="0" value="ZM">Zambia</option>
+                                                <option data-value="249" data-region="0" value="ZW">Zimbabwe</option>
+                                                <option data-value="2" data-region="0" value="AE">
+                                                  Zjednoczone Emiraty Arabskie
+                                                </option>
+                                              </select>
+                                        </div>
+
+                                        <div class="basket-register-form-wrapper__item checkbox">
+                                            <input type="checkbox" name="default1" id="default1" value="1">
+                                            <label for="default1">Adres domyślny</label>
+                                        </div>
+                                        <div class="basket-register-form-wrapper__item checkbox">
+                                            <input type="checkbox" name="default2" id="default2" value="1">
+                                            <label for="default2">Adres wysyłki</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        
+                        <div class="basket-register__footer basket-register-footer">
+                            <span> - Pole wymagane</span>
+                        </div>
+                    </div>
+                    <div class="basket-register__btns basket-register-btns">
+                        <button type="submit" name="button1" class="btn-link">« Wstecz</button>
+                        <button type="submit" name="button2" class="basket-register-btns__two">Zapisz</button>
+                    </div>
+                </form>
+                </div>
+            </section>
+        </main>
+
+    <footer class="footer">
+        <div class="footer__inner footer-inner">
+            <div class="footer-inner__container _container">
+                <div class="footer-inner__item accordion">
+                    <div class="accordion__header">WAŻNE LINKI <span>&#10094;</span></div>
+                    <div class="accordion__body">
+                        <a href="/strona/instrukcje" title="INSTRUKCJE MOONIE">
+                            INSTRUKCJE MOONIE
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-inner__item accordion">
+                    <div class="accordion__header">Informacje <span>&#10094;</span></div>
+                    <div class="accordion__body">
+                        <a href="/strona/www-moonie-shoplo-com-dostawa" title="METODY DOSTAWY I PŁATNOŚCI">
+                            METODY DOSTAWY I PŁATNOŚCI
+                        </a>
+                        <a href="/regulaminy" title="Regulaminy">
+                            Regulaminy
+                        </a>
+                        <a href="/politykaprywatnosci" title="Polityka prywatności">
+                            Polityka prywatności
+                        </a>
+                        <a href="/zwroty-i-reklamacje" title="Zwroty i reklamacje">
+                            Zwroty i reklamacje
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-inner__item accordion">
+                    <div class="accordion__header">NASZE PRODUKTY <span>&#10094;</span></div>
+                    <div class="accordion__body">
+                        <a href="/kategoria/szumiace-kroliczki-z-lampka" title="SZUMIĄCY KRÓLICZEK Z LAMPKĄ">
+                    SZUMIĄCY KRÓLICZEK Z LAMPKĄ
+                        </a>
+                        <a href="/kategoria/moonie-mini" title="KRÓLICZKI SENSORYCZNE">
+                            KRÓLICZKI SENSORYCZNE
+                        </a>
+                        <a href="/kategoria/lniane-uspokajacze" title="LNIANE PRZYTULANKI">
+                            LNIANE PRZYTULANKI
+                        </a>
+                        <a href="/kategoria/zestawy" title="ZESTAWY">
+                            ZESTAWY
+                        </a>
+                        <a href="/kategoria/na-prezent" title="NA PREZENT">
+                            NA PREZENT
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer__user footer-user">
+            <div class="footer-user__container _container">
+                <div class="footer-user__item logo">
+                    <a href="./index.html">
+                        <img src="./imgs/svg/logo.svg" alt="Logo">
+                    </a>
+                </div>
+                <div class="footer-user__item moonie">
+                    <a href="mailto:hello@moonie.pl">HELLO@MOONIE.PL</a>
+                </div>
+                <div class="footer-user__item social">
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a href="https://www.facebook.com/moonie.friend" class="social__link">
+                                <span class="_icon-facebook"></span>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://www.instagram.com/moonie_friend/" class="social__link">
+                                <span class="_icon-instagram"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__full-version full-version">
+            <span>
+                Pokaż pełną wersję strony
+            </span>
+        </div>
+
+        <div class="footer__bottom footer-bottom">
+            <div class="footer-bottom__container _container">
+                <a href="https://www.kifa.ws/">Kifa</a>
+            </div>
+        </div>
+
+        <div class="footer__btn-start">
+            <button>&#10094;</button>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

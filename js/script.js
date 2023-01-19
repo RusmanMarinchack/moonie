@@ -7,7 +7,7 @@ if(document.querySelector('.box-slider__swiper')) {
             prevEl: '.box-slider__swiper-button-next',
           },
           spaceBetween: 30,
-          effect: "fade",
+           effect: "fade",
           autoplay: {
                 delay: 4000,
               },
@@ -176,10 +176,18 @@ function addClassPopup() {
                 // function openPopup() {
                     let dataId = btn.dataset.id;
                     let popup = document.querySelector(`#${dataId}`);
+
+                    console.log(dataId)
     
                     if(popup) {
                         popup.classList.add('active');
                         document.body.classList.add('look');
+
+                        if(window.matchMedia("(max-width: 767.98px)")){
+                            if(e.target.classList[0] === 'bsket-mob') {
+                                document.body.classList.remove('look');
+                            }
+                        }
         
                     document.addEventListener('click', function(e) {
                         if(e.target.classList[0] === 'modal' || e.target.classList[0] === '_icon-close') {
@@ -546,18 +554,59 @@ addBigImg();
 // Відкриважмо галерею lightGallery по кліку на велику картинку на сторінці Product.
 
 function openGallery() {
-    let bigImgProduct = document.querySelector('.product-gallery__big-img img');
+    // let bigImgProduct = document.querySelector('.product-gallery__big-img img');
+    let bigImgLinkProduct = document.querySelector('.product-gallery .product-gallery__big-img');
 
-    if (bigImgProduct) {
-        bigImgProduct.addEventListener('click', function() {
-            let dataCount = this.dataset.count;
+    console.log(bigImgLinkProduct)
 
-            location.href = `#lg=1&slide=${dataCount}`;
-            location.hash = `#lg=1&slide=${dataCount}`;
+    if(bigImgLinkProduct) {
+        bigImgLinkProduct.addEventListener('click', async function(e) {
+            e.preventDefault()
 
-             window.location.reload()
+            let dataCount = bigImgLinkProduct.querySelector('img').dataset.count;
+
+            console.log(dataCount)
+
+            let href = bigImgLinkProduct.href;
+
+
+            console.log(href)
+            history.pushState({param: 'Value'}, '', `#lg=1&slide=${dataCount}`);
+
+            
+            await fetch(window.location.href)
+            .then(response => response.text())
+            .then(data => {
+                // console.log(data)
+                // document.open('http://127.0.0.1:5500/product.html#lg=1&slide=1')
+                // document.write(data)
+                // history.go(0)
+                    parserHtml(data)
+            })
         })
-    };
+
+        }
+
+        function parserHtml(html) {
+            let lgContent = document.querySelector('.lg-container');
+
+            document.open()
+            document.write(html);
+            document.close()
+        }
+
+    // if (bigImgProduct) {
+    //     bigImgProduct.addEventListener('click', function() {
+    //         let dataCount = this.dataset.count;
+
+    //         location.href = `#lg=1&slide=${dataCount}`;
+    //         location.hash = `#lg=1&slide=${dataCount}`;
+
+    //          window.location.reload()
+    //     })
+    // };
+
+
 };
 
 
@@ -738,3 +787,4 @@ function playMusic() {
 };
 
 playMusic()
+

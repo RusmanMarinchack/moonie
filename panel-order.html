@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/fonts-icon.css">
+    <title>Panel order</title>
+</head>
+<body class="b-panel-order">
+    
+    <header class="header headers h-panel">
+        <div class="header__container _container">
+            <div class="header__logo">
+                <a href="./index.html">
+                    <img src="./imgs/svg/logo.svg" alt="Logo">
+                </a>
+            </div>
+
+            <div class="header__language language mob sublist">
+                <span class="language__active">PL <span>&#8249;</span></span>
+                <ul class="language__list">
+                    <li class="language__item"><a href="#" class="language__link">PL</a></li>
+                    <li class="language__item"><a href="#" class="language__link">PL</a></li>
+                    <li class="language__item"><a href="#" class="language__link">PL</a></li>
+                    <li class="language__item"><a href="#" class="language__link">PL</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="header__inner">
+                <div class="header__item burger sublist">
+                    <span class="_icon-hamburger"></span>
+                </div>
+                <nav class="header__nav nav">
+                    <ul class="nav__menu">
+                        <li class="nav__item sublist">
+                            <a href="#" class="nav__link">SKLEP</a>
+                            <span>&#x276E;</span>
+                            <ul class="nav__sublist nav-sublist">
+                                <li class="nav-sublist__item"><a href="./store.html" title="SZUMIĄCE MISIE Z LAMPKĄ" class="nav-sublist__link">SZUMIĄCE MISIE Z LAMPKĄ</a></li>
+                                <li class="nav-sublist__item"><a href="./store.html" title="SZUMIĄCE KRÓLICZKI Z LAMPKĄ" class="nav-sublist__link">SZUMIĄCE KRÓLICZKI Z LAMPKĄ</a></li>
+                                <li class="nav-sublist__item"><a href="./store.html" title="KRÓLICZKI SENSORYCZNE" class="nav-sublist__link">KRÓLICZKI SENSORYCZNE</a></li>
+                                <li class="nav-sublist__item"><a href="./store.html" title="NA PREZENTs" class="nav-sublist__link">NA PREZENT</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__item sublist">
+                            <a href="#" class="nav__link">Kolekcje</a>
+                            <ul class="nav__sublist nav-sublist">
+                                <li class="nav-sublist__item"><a href="./collections.html" class="nav-sublist__link">SZUMIĄCE MISIE</a></li>
+                                <li class="nav-sublist__item"><a href="./collections.html" class="nav-sublist__link">SZUMIĄCE KRÓLICZKI</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__item"><a href="#" class="nav__link">ZESTAWY</a></li>
+                        <li class="nav__item mob"><a href="./collections.html" class="nav__link">SZUMIĄCE MISIE</a></li>
+                        <li class="nav__item mob"><a href="./collections.html" class="nav__link">SZUMIĄCE KRÓLICZKI</a></li>
+                        <li class="nav__item"><a href="./contact.html" class="nav__link">KONTAKT</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header__language language sublist">
+                    <span class="language__active">PL <span>&#8249;</span></span>
+                    <ul class="language__list">
+                        <li class="language__item"><a href="#" class="language__link">PL</a></li>
+                        <li class="language__item"><a href="#" class="language__link">PL</a></li>
+
+
+                    </ul>
+                </div>
+
+                <div class="header__icons icons">
+                    
+
+                    <div class="icons__item user sublist">
+                        <button class="_icon-user">
+                            <a href="./login.html"></a>
+                        </button>
+                        <ul class="icons__office-exit office-exit">
+                            <li class="office-exit__item hallo">Witaj <b>Руслан Маринчак</b></li>
+                            <li class="office-exit__item"><a href="./panel.html" class="office-exit__link register">Moje konto</a></li>
+                            <li class="office-exit__item"><a href="#" class="office-exit__link login">Wyloguj</a></li>
+                        </ul>
+                    </div>
+                    <div class="icons__item search sublist">
+                        <button class="search__btn"><span class="_icon-loupe"></span></button>
+                        <div class="search__block search-block">
+                            <button class="search-block__close">&#10005;</button>
+                            <form action="#" class="search-block__form search-block-form">
+                                <div class="search-block-form__item form-item">
+                                    <div class="search-block-form__not-value"><span>&#10006;</span></div>
+                                    <input class="input" type="text" name="search" placeholder="Szukaj">
+                                    <button class="search-block-form__btn" type="submit"><span class="_icon-loupe"></span></button>
+                                    <div class="search-block-form__message message">
+                                        <p>Wpisz szukane hasło.</p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="icons__item btn-popup basket _icon-cart" data-id="popup-basket"><a class="bsket-mob" href="./basket.html"></a><span>0</span></div>
+                </div>
+            </div>
+            
+            <div class="modal header__popup-basket h-popup-basket" id="popup-basket">
+                <div class="h-popup-basket__popup">
+                    <div class="h-popup-basket__header">
+                        <h3 class="h-popup-basket__title">Koszyk:</h3>
+                        <div class="h-popup-basket__close">
+                            <span class="_icon-close"></span>
+                        </div>
+                    </div>
+
+                    <div class="h-popup-basket__product popup-basket-product">
+                        <ul class="popup-basket-product__list">
+                            <li class="popup-basket-product__item">
+                                <div class="popup-basket-product__imgs">
+                                    <img src="./imgs/basket/basket_1.jpg" alt="Product">
+                                </div>
+                                <a class="popup-basket-product__name" href="#">SAND - SZUMIĄCY MIŚ ORGANIC Z LAMPKĄ</a>
+                                <div class="popup-basket-product__info">
+                                    <span class="popup-basket-product__amount">1</span>
+                                    x
+                                    <span class="popup-basket-product__price">229,00 zł</span>
+                                </div>
+                                <div class="popup-basket-product__remove">
+                                    <a href="#">
+                                        usuń
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="popup-basket-product__item">
+                                <div class="popup-basket-product__imgs">
+                                    <img src="./imgs/basket/basket_1.jpg" alt="Product">
+                                </div>
+                                <a class="popup-basket-product__name" href="#">SAND - SZUMIĄCY MIŚ ORGANIC Z LAMPKĄ</a>
+                                <div class="popup-basket-product__info">
+                                    <span class="popup-basket-product__amount">1</span>
+                                    x
+                                    <span class="popup-basket-product__price">229,00 zł</span>
+                                </div>
+                                <div class="popup-basket-product__remove">
+                                    <a href="#">
+                                        usuń
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="h-popup-basket__summery popup-basket-summery">
+                        <a href="./basket.html">do kasy</a>
+                        <div class="popup-basket-summery__prices">
+                            <div class="popup-basket-summery__inner">
+                                <span class="popup-basket-summery__suma">suma:</span>
+                                <span class="popup-basket-summery__total">229,00&nbsp;zł</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__shadow"></div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="main__panel-order panel-order">
+            <div class="panel-order__container _container">
+                <h2 class="panel-order__title">Szczegóły zamówienia (id: 13541)</h2>
+                <div class="panel-order__wrapper">
+                    <div class="panel-order__details panel-order-details">
+                        <ul class="panel-order-details__list">
+                            <li class="panel-order-details__item id">
+                                <strong>Numer zamówienia: </strong><span class="id">13541</span>
+                            </li>
+                            <li class="panel-order-details__item status">
+                                <strong>Status: </strong><span class="status">Nowe</span>
+                            </li>
+                            <li class="panel-order-details__item date">
+                                <strong>Data złożenia: </strong><span class="date">29 listopada 2022</span>
+                            </li>
+                            <li class="panel-order-details__item payment">
+                                <strong>Płatność: </strong><span class="payment">Przelew bankowy</span>
+                            </li>
+                            <li class="panel-order-details__item shipping">
+                                <strong>Dostawa: </strong><span class="shipping">Kurier InPost</span>
+                            </li>
+                        </ul>
+                        <ul class="panel-order-details__list">
+                            <li class="panel-order-details__item">
+                                <b>Adres na fakturze</b>
+                                <p>Руслан Маринчак</p>
+                                <p>Івана Франка 37</p>
+                                <p>31-103, Старокостянтинів</p>
+                                <p>Polska</p>
+                                <p>0964333421</p>
+                            </li>
+                        </ul>
+                        <ul class="panel-order-details__list">
+                            <li class="panel-order-details__item">
+                                <b>Adres wysyłki</b>
+                                <p>Руслан Маринчак</p>
+                                <p>Івана Франка 37</p>
+                                <p>31-103, Старокостянтинів</p>
+                                <p>Polska</p>
+                                <p>0964333421</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="panel-order__products panel-order-products">
+                        <h4 class="panel-order-products__title">Zamówione produkty</h4>
+                        <table class="table-product">
+                            <thead>
+                                <tr class="t-header">
+                                    <td class="name">Nazwa</td>
+                                    <td class="quantity">Nazwa</td>
+                                    <td class="price">Cena</td>
+                                    <td class="sum">Wartość</td>
+                                </tr>
+    
+                                <tr class="t-body">
+                                    <td class="name">
+                                        MINERAL GREY - SZUMIĄCY MIŚ ORGANIC Z LAMPKĄ
+                                    </td>
+                                    <td class="quantity">1 szt.</td>
+                                    <td class="price">229,00&nbsp;zł</td>
+                                    <td class="sum">229,00&nbsp;zł</td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+
+                    <div class="panel-order__price panel-order-price">
+                        <div class="panel-order-price__item together">
+                            <span class="label">Razem:</span>
+                            <span class="value">229,00&nbsp;zł</span>
+                        </div>
+                        <div class="panel-order-price__item delivery">
+                            <span class="label">Koszt dostawy:</span>
+                            <span class="value">9,90&nbsp;zł</span>
+                        </div>
+                        <div class="panel-order-price__item pay">
+                            <span class="label">Do zapłaty:</span>
+                            <span class="value">238,90&nbsp;zł</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner footer-inner">
+            <div class="footer-inner__container _container">
+                <div class="footer-inner__item accordion">
+                    <div class="accordion__header">WAŻNE LINKI <span>&#10094;</span></div>
+                    <div class="accordion__body">
+                        <a href="/strona/instrukcje" title="INSTRUKCJE MOONIE">
+                            INSTRUKCJE MOONIE
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-inner__item accordion">
+                    <div class="accordion__header">Informacje <span>&#10094;</span></div>
+                    <div class="accordion__body">
+                        <a href="/strona/www-moonie-shoplo-com-dostawa" title="METODY DOSTAWY I PŁATNOŚCI">
+                            METODY DOSTAWY I PŁATNOŚCI
+                        </a>
+                        <a href="/regulaminy" title="Regulaminy">
+                            Regulaminy
+                        </a>
+                        <a href="/politykaprywatnosci" title="Polityka prywatności">
+                            Polityka prywatności
+                        </a>
+                        <a href="/zwroty-i-reklamacje" title="Zwroty i reklamacje">
+                            Zwroty i reklamacje
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-inner__item accordion">
+                    <div class="accordion__header">NASZE PRODUKTY <span>&#10094;</span></div>
+                    <div class="accordion__body">
+                        <a href="/kategoria/szumiace-kroliczki-z-lampka" title="SZUMIĄCY KRÓLICZEK Z LAMPKĄ">
+                    SZUMIĄCY KRÓLICZEK Z LAMPKĄ
+                        </a>
+                        <a href="/kategoria/moonie-mini" title="KRÓLICZKI SENSORYCZNE">
+                            KRÓLICZKI SENSORYCZNE
+                        </a>
+                        <a href="/kategoria/lniane-uspokajacze" title="LNIANE PRZYTULANKI">
+                            LNIANE PRZYTULANKI
+                        </a>
+                        <a href="/kategoria/zestawy" title="ZESTAWY">
+                            ZESTAWY
+                        </a>
+                        <a href="/kategoria/na-prezent" title="NA PREZENT">
+                            NA PREZENT
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer__user footer-user">
+            <div class="footer-user__container _container">
+                <div class="footer-user__item logo">
+                    <a href="./index.html">
+                        <img src="./imgs/svg/logo.svg" alt="Logo">
+                    </a>
+                </div>
+                <div class="footer-user__item moonie">
+                    <a href="mailto:hello@moonie.pl">HELLO@MOONIE.PL</a>
+                </div>
+                <div class="footer-user__item social">
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a href="https://www.facebook.com/moonie.friend" class="social__link">
+                                <span class="_icon-facebook"></span>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://www.instagram.com/moonie_friend/" class="social__link">
+                                <span class="_icon-instagram"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__full-version full-version">
+            <span>
+                Pokaż pełną wersję strony
+            </span>
+        </div>
+
+        <div class="footer__bottom footer-bottom">
+            <div class="footer-bottom__container _container">
+                <a href="https://www.kifa.ws/">Kifa</a>
+            </div>
+        </div>
+
+        <div class="footer__btn-start">
+            <button>&#10094;</button>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

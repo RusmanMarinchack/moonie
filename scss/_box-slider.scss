@@ -86,9 +86,21 @@
             display: none;
         }
 
+        &.swiper-button-prev {
+            left: auto;
+            right: 10px;
+        }
+
+        &.swiper-button-next {
+            left: 10px;
+            right: auto;
+        }
+
         &:after {
             font-size: 16px;
+            transform: rotate(180deg);
         }
+
         
         &.swiper-button-disabled {
             color: #8e8e8e;

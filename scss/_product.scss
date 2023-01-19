@@ -165,8 +165,10 @@
             &__prices {
                 font-weight: 900;
                 font-size: 12px;
+                margin-bottom: 20px;
 
                 & .price {
+                    margin-top: 10px;
                     font-size: 23px;
                 }
             }
